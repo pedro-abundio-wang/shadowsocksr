@@ -29,13 +29,13 @@ if __name__ == '__main__':
     os.chdir(file_path)
     sys.path.insert(0, os.path.join(file_path, '../'))
 
-    logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s - %(process)d - %(thread)d - %(threadName)s - %(filename)s - %(funcName)s - %(pathname)s - %(lineno)d - %(name)s - %(levelname)s - %(message)s')
-    logger = logging.getLogger(__name__)
 
 from shadowsocks import shell, daemon, eventloop, tcprelay, udprelay, asyncdns
 
 
 def main():
+    logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s - %(process)d - %(thread)d - %(threadName)s - %(filename)s - %(funcName)s - %(pathname)s - %(lineno)d - %(name)s - %(levelname)s - %(message)s')
+
     shell.check_python()
 
     # fix py2exe
