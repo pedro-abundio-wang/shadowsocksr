@@ -8,6 +8,7 @@
     "method":"aes-256-cfb",
     "protocol":"origin",
     "obfs":"plain",
-    "fast_open": false
+    "fast_open": false,
+    "verbose": true
 }
 

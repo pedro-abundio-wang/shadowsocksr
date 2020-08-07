@@ -1,0 +1,1618 @@
+ERROR: config not specified
+IPv6 support
+usage: ssserver [OPTION]...
+A fast tunnel proxy that helps you bypass firewalls.
+
+You can supply configurations via either config file or command line arguments.
+
+Proxy options:
+  -c CONFIG              path to config file
+  -s SERVER_ADDR         server address, default: 0.0.0.0
+  -p SERVER_PORT         server port, default: 8388
+  -k PASSWORD            password
+  -m METHOD              encryption method, default: aes-256-cfb
+  -o OBFS                obfsplugin, default: http_simple
+  -t TIMEOUT             timeout in seconds, default: 300
+  --fast-open            use TCP_FASTOPEN, requires Linux 3.7+
+  --workers WORKERS      number of workers, available on Unix/Linux
+  --forbidden-ip IPLIST  comma seperated IP list forbidden to connect
+  --manager-address ADDR optional server manager UDP address, see wiki
+
+General options:
+  -h, --help             show this help message and exit
+  -d start/stop/restart  daemon mode
+  --pid-file PID_FILE    pid file for daemon mode
+  --log-file LOG_FILE    log file for daemon mode
+  --user USER            username to run as
+  -v, -vv                verbose mode
+  -q, -qq                quiet mode, only show warnings/errors
+  --version              show version information
+
+Online help: <https://github.com/shadowsocks/shadowsocks>
+
+INFO: loading config from /root/shadowsocksr/shadowsocks/../shadowsocks/../config.json
+2020-08-07 15:48:49 INFO     loading libcrypto from /root/miniconda3/lib/libcrypto.so.1.1
+2020-08-07 15:48:49 INFO     server start with protocol[origin] password [b'password'] method [aes-256-cfb] obfs [plain] obfs_param []
+2020-08-07 15:48:49 INFO     starting server at :::18388
+INFO: loading config from /root/shadowsocksr/shadowsocks/../shadowsocks/../config.json
+2020-08-07 15:49:18 INFO     loading libcrypto from /root/miniconda3/lib/libcrypto.so.1.1
+2020-08-07 15:49:18 INFO     server start with protocol[origin] password [b'password'] method [aes-256-cfb] obfs [plain] obfs_param []
+2020-08-07 15:49:18 INFO     starting server at :::18388
+2020-08-07 15:49:33 INFO     TCP connecting github.com:443 from ::ffff:111.40.35.2:12799
+2020-08-07 15:49:34 INFO     TCP connecting alive.github.com:443 from ::ffff:111.40.35.2:13756
+2020-08-07 15:49:46 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:24184
+2020-08-07 15:49:46 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:49:47 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:25229
+2020-08-07 15:49:48 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:49:48 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:26096
+2020-08-07 15:49:49 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:49:49 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:26577
+2020-08-07 15:49:49 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:26593
+2020-08-07 15:49:49 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:26679
+2020-08-07 15:49:49 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:49:50 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:49:50 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:27337
+2020-08-07 15:49:50 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:27424
+2020-08-07 15:49:50 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:49:58 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:07 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:41377
+2020-08-07 15:50:08 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:09 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:40767
+2020-08-07 15:50:11 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:12 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:45633
+2020-08-07 15:50:12 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:18 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:50424
+2020-08-07 15:50:19 INFO     TCP connecting ogs.google.com:443 from ::ffff:111.40.35.2:52163
+2020-08-07 15:50:32 INFO     TCP connecting nexus.officeapps.live.com:443 from ::ffff:111.40.35.2:57599
+2020-08-07 15:50:34 INFO     TCP connecting nexusrules.officeapps.live.com:443 from ::ffff:111.40.35.2:13597
+2020-08-07 15:50:37 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:16683
+2020-08-07 15:50:38 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:38 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:17200
+2020-08-07 15:50:38 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:40 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:19136
+2020-08-07 15:50:41 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:42 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:20208
+2020-08-07 15:50:42 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:44 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:21868
+2020-08-07 15:50:45 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:48 INFO     TCP connecting clients4.google.com:443 from ::ffff:111.40.35.2:25607
+2020-08-07 15:50:49 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:54 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:31026
+2020-08-07 15:50:54 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:56 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:32388
+2020-08-07 15:50:56 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:56 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:33193
+2020-08-07 15:50:58 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:58 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:34495
+2020-08-07 15:50:58 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:34577
+2020-08-07 15:50:58 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:59 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:50:59 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:35234
+2020-08-07 15:51:00 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:45871
+2020-08-07 15:51:07 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:42244
+2020-08-07 15:51:08 INFO     TCP connecting i.ytimg.com:443 from ::ffff:111.40.35.2:42775
+2020-08-07 15:51:17 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:18 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:18 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:50766
+2020-08-07 15:51:18 INFO     TCP connecting s.ytimg.com:443 from ::ffff:111.40.35.2:50773
+2020-08-07 15:51:18 INFO     TCP connecting content-autofill.googleapis.com:443 from ::ffff:111.40.35.2:50769
+2020-08-07 15:51:19 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:27 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:57814
+2020-08-07 15:51:27 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:28 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:58912
+2020-08-07 15:51:31 INFO     TCP connecting ogs.google.com:443 from ::ffff:111.40.35.2:11056
+2020-08-07 15:51:31 INFO     TCP connecting apis.google.com:443 from ::ffff:111.40.35.2:11439
+2020-08-07 15:51:31 INFO     TCP connecting play.google.com:443 from ::ffff:111.40.35.2:11479
+2020-08-07 15:51:31 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:11486
+2020-08-07 15:51:32 INFO     TCP connecting accounts.google.com:443 from ::ffff:111.40.35.2:12308
+2020-08-07 15:51:33 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:33 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:12819
+2020-08-07 15:51:33 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:33 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:13272
+2020-08-07 15:51:34 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:34 INFO     TCP connecting accounts.google.com:443 from ::ffff:111.40.35.2:14062
+2020-08-07 15:51:34 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:35 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:14359
+2020-08-07 15:51:35 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:38 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:17363
+2020-08-07 15:51:39 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:39 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:18078
+2020-08-07 15:51:40 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:42 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:20433
+2020-08-07 15:51:43 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:43 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:21335
+2020-08-07 15:51:44 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:46 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:23346
+2020-08-07 15:51:46 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:47 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:24858
+2020-08-07 15:51:48 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:49 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:26477
+2020-08-07 15:51:50 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:51 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:28094
+2020-08-07 15:51:51 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:53 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:29601
+2020-08-07 15:51:53 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:51:57 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:32940
+2020-08-07 15:51:57 ERROR    [Errno 104] Connection reset by peer
+INFO: loading config from /root/shadowsocksr/shadowsocks/../shadowsocks/../config.json
+2020-08-07 15:52:43 INFO     loading libcrypto from /root/miniconda3/lib/libcrypto.so.1.1
+2020-08-07 15:52:43 INFO     server start with protocol[origin] password [b'password'] method [aes-256-cfb] obfs [plain] obfs_param []
+2020-08-07 15:52:43 INFO     starting server at :::18388
+2020-08-07 15:52:43 DEBUG    using event model: epoll
+2020-08-07 15:52:47 DEBUG    accept
+2020-08-07 15:52:47 DEBUG    server port 18388 connections = 1
+2020-08-07 15:52:47 INFO     TCP connecting az764295.vo.msecnd.net:443 from ::ffff:111.40.35.2:22496
+2020-08-07 15:52:47 DEBUG    resolving b'az764295.vo.msecnd.net' with type 1 using server 183.60.83.19
+2020-08-07 15:52:47 DEBUG    resolving b'az764295.vo.msecnd.net' with type 1 using server 183.60.82.98
+2020-08-07 15:52:47 DEBUG    got local error
+2020-08-07 15:52:47 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:52:47 DEBUG    destroy: az764295.vo.msecnd.net:443
+2020-08-07 15:52:47 DEBUG    destroying remote
+2020-08-07 15:52:47 DEBUG    destroying local
+2020-08-07 15:52:47 DEBUG    server port 18388 connections = 0
+2020-08-07 15:53:10 DEBUG    accept
+2020-08-07 15:53:10 DEBUG    server port 18388 connections = 1
+2020-08-07 15:53:10 INFO     TCP connecting raw.githubusercontent.com:443 from ::ffff:111.40.35.2:41671
+2020-08-07 15:53:10 DEBUG    resolving b'raw.githubusercontent.com' with type 1 using server 183.60.83.19
+2020-08-07 15:53:10 DEBUG    resolving b'raw.githubusercontent.com' with type 1 using server 183.60.82.98
+2020-08-07 15:53:23 DEBUG    accept
+2020-08-07 15:53:23 DEBUG    server port 18388 connections = 2
+2020-08-07 15:53:23 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:52549
+2020-08-07 15:53:23 DEBUG    resolving b'www.google.com' with type 1 using server 183.60.83.19
+2020-08-07 15:53:23 DEBUG    resolving b'www.google.com' with type 1 using server 183.60.82.98
+2020-08-07 15:53:23 DEBUG    accept
+2020-08-07 15:53:23 DEBUG    server port 18388 connections = 3
+2020-08-07 15:53:23 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:49982
+2020-08-07 15:53:23 DEBUG    resolving b'mail.google.com' with type 1 using server 183.60.83.19
+2020-08-07 15:53:23 DEBUG    resolving b'mail.google.com' with type 1 using server 183.60.82.98
+2020-08-07 15:53:26 DEBUG    accept
+2020-08-07 15:53:26 DEBUG    server port 18388 connections = 4
+2020-08-07 15:53:26 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:54911
+2020-08-07 15:53:26 DEBUG    hit cache: b'mail.google.com'
+2020-08-07 15:53:28 DEBUG    accept
+2020-08-07 15:53:28 DEBUG    server port 18388 connections = 5
+2020-08-07 15:53:28 INFO     TCP connecting mail.google.com:443 from ::ffff:111.40.35.2:57071
+2020-08-07 15:53:28 DEBUG    hit cache: b'mail.google.com'
+2020-08-07 15:53:29 DEBUG    accept
+2020-08-07 15:53:29 DEBUG    server port 18388 connections = 6
+2020-08-07 15:53:29 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:57769
+2020-08-07 15:53:29 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:53:29 DEBUG    accept
+2020-08-07 15:53:29 DEBUG    server port 18388 connections = 7
+2020-08-07 15:53:29 INFO     TCP connecting raw.githubusercontent.com:443 from ::ffff:111.40.35.2:58129
+2020-08-07 15:53:29 DEBUG    hit cache: b'raw.githubusercontent.com'
+2020-08-07 15:53:30 DEBUG    accept
+2020-08-07 15:53:30 DEBUG    server port 18388 connections = 8
+2020-08-07 15:53:30 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:58874
+2020-08-07 15:53:30 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:53:31 DEBUG    accept
+2020-08-07 15:53:31 DEBUG    server port 18388 connections = 9
+2020-08-07 15:53:31 DEBUG    accept
+2020-08-07 15:53:31 DEBUG    server port 18388 connections = 10
+2020-08-07 15:53:31 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:59073
+2020-08-07 15:53:31 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:53:31 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:58997
+2020-08-07 15:53:31 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:53:33 DEBUG    destroy: www.google.com:443
+2020-08-07 15:53:33 DEBUG    destroying remote
+2020-08-07 15:53:33 DEBUG    destroying local
+2020-08-07 15:53:33 DEBUG    server port 18388 connections = 9
+2020-08-07 15:53:33 DEBUG    destroy: mail.google.com:443
+2020-08-07 15:53:33 DEBUG    destroying remote
+2020-08-07 15:53:33 DEBUG    destroying local
+2020-08-07 15:53:33 DEBUG    server port 18388 connections = 8
+2020-08-07 15:53:33 DEBUG    accept
+2020-08-07 15:53:33 DEBUG    server port 18388 connections = 9
+2020-08-07 15:53:33 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:58781
+2020-08-07 15:53:33 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:53:34 DEBUG    accept
+2020-08-07 15:53:34 DEBUG    server port 18388 connections = 10
+2020-08-07 15:53:34 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:59173
+2020-08-07 15:53:34 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:53:36 DEBUG    accept
+2020-08-07 15:53:36 DEBUG    server port 18388 connections = 11
+2020-08-07 15:53:36 INFO     TCP connecting nexus.officeapps.live.com:443 from ::ffff:111.40.35.2:13157
+2020-08-07 15:53:36 DEBUG    resolving b'nexus.officeapps.live.com' with type 1 using server 183.60.83.19
+2020-08-07 15:53:36 DEBUG    resolving b'nexus.officeapps.live.com' with type 1 using server 183.60.82.98
+2020-08-07 15:53:38 DEBUG    destroy: mail.google.com:443
+2020-08-07 15:53:38 DEBUG    destroying remote
+2020-08-07 15:53:38 DEBUG    destroying local
+2020-08-07 15:53:38 DEBUG    server port 18388 connections = 10
+2020-08-07 15:53:39 DEBUG    destroy: www.google.com:443
+2020-08-07 15:53:39 DEBUG    destroying remote
+2020-08-07 15:53:39 DEBUG    destroying local
+2020-08-07 15:53:39 DEBUG    server port 18388 connections = 9
+2020-08-07 15:53:40 DEBUG    destroy: www.google.com:443
+2020-08-07 15:53:40 DEBUG    destroying remote
+2020-08-07 15:53:40 DEBUG    destroying local
+2020-08-07 15:53:40 DEBUG    server port 18388 connections = 8
+2020-08-07 15:53:41 DEBUG    destroy: www.google.com:443
+2020-08-07 15:53:41 DEBUG    destroying remote
+2020-08-07 15:53:41 DEBUG    destroying local
+2020-08-07 15:53:41 DEBUG    server port 18388 connections = 7
+2020-08-07 15:53:41 DEBUG    destroy: www.google.com:443
+2020-08-07 15:53:41 DEBUG    destroying remote
+2020-08-07 15:53:41 DEBUG    destroying local
+2020-08-07 15:53:41 DEBUG    server port 18388 connections = 6
+2020-08-07 15:53:43 DEBUG    destroy: www.google.com:443
+2020-08-07 15:53:43 DEBUG    destroying remote
+2020-08-07 15:53:43 DEBUG    destroying local
+2020-08-07 15:53:43 DEBUG    server port 18388 connections = 5
+2020-08-07 15:53:44 DEBUG    accept
+2020-08-07 15:53:44 DEBUG    server port 18388 connections = 6
+2020-08-07 15:53:44 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:19608
+2020-08-07 15:53:44 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:53:44 DEBUG    destroy: www.google.com:443
+2020-08-07 15:53:44 DEBUG    destroying remote
+2020-08-07 15:53:44 DEBUG    destroying local
+2020-08-07 15:53:44 DEBUG    server port 18388 connections = 5
+2020-08-07 15:53:54 DEBUG    destroy: www.google.com:443
+2020-08-07 15:53:54 DEBUG    destroying remote
+2020-08-07 15:53:54 DEBUG    destroying local
+2020-08-07 15:53:54 DEBUG    server port 18388 connections = 4
+2020-08-07 15:53:56 DEBUG    accept
+2020-08-07 15:53:56 DEBUG    server port 18388 connections = 5
+2020-08-07 15:53:56 INFO     TCP connecting nexus.officeapps.live.com:443 from ::ffff:111.40.35.2:29094
+2020-08-07 15:53:56 DEBUG    hit cache: b'nexus.officeapps.live.com'
+2020-08-07 15:53:58 DEBUG    accept
+2020-08-07 15:53:58 DEBUG    server port 18388 connections = 6
+2020-08-07 15:53:58 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:31620
+2020-08-07 15:53:58 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:54:08 DEBUG    destroy: www.google.com:443
+2020-08-07 15:54:08 DEBUG    destroying remote
+2020-08-07 15:54:08 DEBUG    destroying local
+2020-08-07 15:54:08 DEBUG    server port 18388 connections = 5
+2020-08-07 15:54:16 DEBUG    accept
+2020-08-07 15:54:16 DEBUG    server port 18388 connections = 6
+2020-08-07 15:54:16 INFO     TCP connecting nexus.officeapps.live.com:443 from ::ffff:111.40.35.2:46388
+2020-08-07 15:54:16 DEBUG    hit cache: b'nexus.officeapps.live.com'
+2020-08-07 15:54:35 DEBUG    accept
+2020-08-07 15:54:35 DEBUG    server port 18388 connections = 7
+2020-08-07 15:54:35 INFO     TCP connecting nexus.officeapps.live.com:443 from ::ffff:111.40.35.2:12596
+2020-08-07 15:54:35 DEBUG    hit cache: b'nexus.officeapps.live.com'
+2020-08-07 15:54:36 DEBUG    got remote error
+2020-08-07 15:54:36 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:54:36 DEBUG    destroy: nexus.officeapps.live.com:443
+2020-08-07 15:54:36 DEBUG    destroying remote
+2020-08-07 15:54:36 DEBUG    destroying local
+2020-08-07 15:54:36 DEBUG    server port 18388 connections = 6
+2020-08-07 15:54:39 DEBUG    accept
+2020-08-07 15:54:39 DEBUG    server port 18388 connections = 7
+2020-08-07 15:54:39 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:15440
+2020-08-07 15:54:39 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:54:49 DEBUG    destroy: www.google.com:443
+2020-08-07 15:54:49 DEBUG    destroying remote
+2020-08-07 15:54:49 DEBUG    destroying local
+2020-08-07 15:54:49 DEBUG    server port 18388 connections = 6
+2020-08-07 15:55:04 DEBUG    accept
+2020-08-07 15:55:04 DEBUG    server port 18388 connections = 7
+2020-08-07 15:55:04 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:36682
+2020-08-07 15:55:04 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:55:05 DEBUG    accept
+2020-08-07 15:55:05 DEBUG    server port 18388 connections = 8
+2020-08-07 15:55:05 INFO     TCP connecting adservice.google.cn:443 from ::ffff:111.40.35.2:37759
+2020-08-07 15:55:05 DEBUG    resolving b'adservice.google.cn' with type 1 using server 183.60.83.19
+2020-08-07 15:55:05 DEBUG    resolving b'adservice.google.cn' with type 1 using server 183.60.82.98
+2020-08-07 15:55:05 DEBUG    resolving b'adservice.google.cn' with type 28 using server 183.60.83.19
+2020-08-07 15:55:05 DEBUG    resolving b'adservice.google.cn' with type 28 using server 183.60.82.98
+2020-08-07 15:55:05 ERROR    unknown hostname b'adservice.google.cn' when handling connection from ::ffff:111.40.35.2:37759
+2020-08-07 15:55:05 DEBUG    destroy: adservice.google.cn:443
+2020-08-07 15:55:05 DEBUG    destroying local
+2020-08-07 15:55:05 DEBUG    server port 18388 connections = 7
+2020-08-07 15:55:09 DEBUG    accept
+2020-08-07 15:55:09 DEBUG    server port 18388 connections = 8
+2020-08-07 15:55:09 INFO     TCP connecting ogs.google.com:443 from ::ffff:111.40.35.2:40922
+2020-08-07 15:55:09 DEBUG    resolving b'ogs.google.com' with type 1 using server 183.60.83.19
+2020-08-07 15:55:09 DEBUG    resolving b'ogs.google.com' with type 1 using server 183.60.82.98
+2020-08-07 15:55:09 DEBUG    accept
+2020-08-07 15:55:09 DEBUG    server port 18388 connections = 9
+2020-08-07 15:55:09 INFO     TCP connecting apis.google.com:443 from ::ffff:111.40.35.2:41174
+2020-08-07 15:55:09 DEBUG    resolving b'apis.google.com' with type 1 using server 183.60.83.19
+2020-08-07 15:55:09 DEBUG    resolving b'apis.google.com' with type 1 using server 183.60.82.98
+2020-08-07 15:55:11 DEBUG    accept
+2020-08-07 15:55:11 DEBUG    server port 18388 connections = 10
+2020-08-07 15:55:11 INFO     TCP connecting play.google.com:443 from ::ffff:111.40.35.2:42425
+2020-08-07 15:55:11 DEBUG    resolving b'play.google.com' with type 1 using server 183.60.83.19
+2020-08-07 15:55:11 DEBUG    resolving b'play.google.com' with type 1 using server 183.60.82.98
+2020-08-07 15:55:36 DEBUG    got remote error
+2020-08-07 15:55:36 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:55:36 DEBUG    destroy: nexus.officeapps.live.com:443
+2020-08-07 15:55:36 DEBUG    destroying remote
+2020-08-07 15:55:36 DEBUG    destroying local
+2020-08-07 15:55:36 DEBUG    server port 18388 connections = 9
+2020-08-07 15:55:56 DEBUG    got remote error
+2020-08-07 15:55:56 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:55:56 DEBUG    destroy: nexus.officeapps.live.com:443
+2020-08-07 15:55:56 DEBUG    destroying remote
+2020-08-07 15:55:56 DEBUG    destroying local
+2020-08-07 15:55:56 DEBUG    server port 18388 connections = 8
+2020-08-07 15:56:18 DEBUG    got remote error
+2020-08-07 15:56:18 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:56:18 DEBUG    destroy: nexus.officeapps.live.com:443
+2020-08-07 15:56:18 DEBUG    destroying remote
+2020-08-07 15:56:18 DEBUG    destroying local
+2020-08-07 15:56:18 DEBUG    server port 18388 connections = 7
+2020-08-07 15:56:58 DEBUG    accept
+2020-08-07 15:56:58 DEBUG    server port 18388 connections = 8
+2020-08-07 15:56:58 INFO     TCP connecting 1.1.1.3:80 from ::ffff:111.40.35.2:29981
+2020-08-07 15:56:58 DEBUG    destroy: 1.1.1.3:80
+2020-08-07 15:56:58 DEBUG    destroying remote
+2020-08-07 15:56:58 DEBUG    destroying local
+2020-08-07 15:56:58 DEBUG    server port 18388 connections = 7
+2020-08-07 15:56:58 DEBUG    accept
+2020-08-07 15:56:58 DEBUG    server port 18388 connections = 8
+2020-08-07 15:56:58 INFO     TCP connecting one.one.one.one:443 from ::ffff:111.40.35.2:30432
+2020-08-07 15:56:58 DEBUG    resolving b'one.one.one.one' with type 1 using server 183.60.83.19
+2020-08-07 15:56:58 DEBUG    resolving b'one.one.one.one' with type 1 using server 183.60.82.98
+2020-08-07 15:57:15 DEBUG    got local error
+2020-08-07 15:57:15 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:15 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:15 DEBUG    destroying remote
+2020-08-07 15:57:15 DEBUG    destroying local
+2020-08-07 15:57:15 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:15 DEBUG    accept
+2020-08-07 15:57:15 DEBUG    server port 18388 connections = 8
+2020-08-07 15:57:15 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:45440
+2020-08-07 15:57:15 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:16 DEBUG    got local error
+2020-08-07 15:57:16 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:16 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:16 DEBUG    destroying remote
+2020-08-07 15:57:16 DEBUG    destroying local
+2020-08-07 15:57:16 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:26 DEBUG    destroy: mail.google.com:443
+2020-08-07 15:57:26 DEBUG    destroying remote
+2020-08-07 15:57:26 DEBUG    destroying local
+2020-08-07 15:57:26 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:26 DEBUG    accept
+2020-08-07 15:57:26 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:26 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:54457
+2020-08-07 15:57:26 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:26 DEBUG    got local error
+2020-08-07 15:57:26 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:26 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:26 DEBUG    destroying remote
+2020-08-07 15:57:26 DEBUG    destroying local
+2020-08-07 15:57:26 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:26 DEBUG    accept
+2020-08-07 15:57:26 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:26 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:55067
+2020-08-07 15:57:26 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:27 DEBUG    got local error
+2020-08-07 15:57:27 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:27 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:27 DEBUG    destroying remote
+2020-08-07 15:57:27 DEBUG    destroying local
+2020-08-07 15:57:27 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:29 DEBUG    accept
+2020-08-07 15:57:29 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:29 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:57405
+2020-08-07 15:57:29 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:29 DEBUG    got local error
+2020-08-07 15:57:29 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:29 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:29 DEBUG    destroying remote
+2020-08-07 15:57:29 DEBUG    destroying local
+2020-08-07 15:57:29 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:39 DEBUG    accept
+2020-08-07 15:57:39 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:39 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:16409
+2020-08-07 15:57:39 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:40 DEBUG    got local error
+2020-08-07 15:57:40 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:40 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:40 DEBUG    destroying remote
+2020-08-07 15:57:40 DEBUG    destroying local
+2020-08-07 15:57:40 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:41 DEBUG    accept
+2020-08-07 15:57:41 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:41 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:17889
+2020-08-07 15:57:41 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:41 DEBUG    got local error
+2020-08-07 15:57:41 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:41 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:41 DEBUG    destroying remote
+2020-08-07 15:57:41 DEBUG    destroying local
+2020-08-07 15:57:41 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:42 DEBUG    accept
+2020-08-07 15:57:42 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:42 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:19242
+2020-08-07 15:57:42 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:43 DEBUG    got local error
+2020-08-07 15:57:43 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:43 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:43 DEBUG    destroying remote
+2020-08-07 15:57:43 DEBUG    destroying local
+2020-08-07 15:57:43 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:45 DEBUG    accept
+2020-08-07 15:57:45 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:45 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:21544
+2020-08-07 15:57:45 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:46 DEBUG    got local error
+2020-08-07 15:57:46 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:46 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:46 DEBUG    destroying remote
+2020-08-07 15:57:46 DEBUG    destroying local
+2020-08-07 15:57:46 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:47 DEBUG    accept
+2020-08-07 15:57:47 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:47 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:23485
+2020-08-07 15:57:47 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:48 DEBUG    accept
+2020-08-07 15:57:48 DEBUG    server port 18388 connections = 8
+2020-08-07 15:57:48 INFO     TCP connecting az764295.vo.msecnd.net:443 from ::ffff:111.40.35.2:23906
+2020-08-07 15:57:48 DEBUG    hit cache: b'az764295.vo.msecnd.net'
+2020-08-07 15:57:48 DEBUG    got local error
+2020-08-07 15:57:48 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:48 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:48 DEBUG    destroying remote
+2020-08-07 15:57:48 DEBUG    destroying local
+2020-08-07 15:57:48 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:49 DEBUG    accept
+2020-08-07 15:57:49 DEBUG    server port 18388 connections = 8
+2020-08-07 15:57:49 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:25050
+2020-08-07 15:57:49 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:49 DEBUG    got local error
+2020-08-07 15:57:49 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:49 DEBUG    destroy: az764295.vo.msecnd.net:443
+2020-08-07 15:57:49 DEBUG    destroying remote
+2020-08-07 15:57:49 DEBUG    destroying local
+2020-08-07 15:57:49 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:49 DEBUG    got local error
+2020-08-07 15:57:49 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:49 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:49 DEBUG    destroying remote
+2020-08-07 15:57:49 DEBUG    destroying local
+2020-08-07 15:57:49 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:50 DEBUG    accept
+2020-08-07 15:57:50 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:50 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:25719
+2020-08-07 15:57:50 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:50 DEBUG    got local error
+2020-08-07 15:57:50 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:50 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:50 DEBUG    destroying remote
+2020-08-07 15:57:50 DEBUG    destroying local
+2020-08-07 15:57:50 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:51 DEBUG    accept
+2020-08-07 15:57:51 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:51 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:27104
+2020-08-07 15:57:51 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:54 DEBUG    got local error
+2020-08-07 15:57:54 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:54 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:54 DEBUG    destroying remote
+2020-08-07 15:57:54 DEBUG    destroying local
+2020-08-07 15:57:54 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:54 DEBUG    accept
+2020-08-07 15:57:54 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:54 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:29955
+2020-08-07 15:57:54 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:55 DEBUG    got local error
+2020-08-07 15:57:55 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:55 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:55 DEBUG    destroying remote
+2020-08-07 15:57:55 DEBUG    destroying local
+2020-08-07 15:57:55 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:56 DEBUG    accept
+2020-08-07 15:57:56 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:56 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:31092
+2020-08-07 15:57:56 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:57:56 DEBUG    got local error
+2020-08-07 15:57:56 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 15:57:56 DEBUG    destroy: www.google.com:443
+2020-08-07 15:57:56 DEBUG    destroying remote
+2020-08-07 15:57:56 DEBUG    destroying local
+2020-08-07 15:57:56 DEBUG    server port 18388 connections = 6
+2020-08-07 15:57:58 DEBUG    accept
+2020-08-07 15:57:58 DEBUG    server port 18388 connections = 7
+2020-08-07 15:57:58 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:32611
+2020-08-07 15:57:58 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:58:00 DEBUG    destroy: one.one.one.one:443
+2020-08-07 15:58:00 DEBUG    destroying remote
+2020-08-07 15:58:00 DEBUG    destroying local
+2020-08-07 15:58:00 DEBUG    server port 18388 connections = 6
+2020-08-07 15:58:00 DEBUG    accept
+2020-08-07 15:58:00 DEBUG    server port 18388 connections = 7
+2020-08-07 15:58:00 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:35160
+2020-08-07 15:58:00 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:58:08 DEBUG    destroy: www.google.com:443
+2020-08-07 15:58:08 DEBUG    destroying remote
+2020-08-07 15:58:08 DEBUG    destroying local
+2020-08-07 15:58:08 DEBUG    server port 18388 connections = 6
+2020-08-07 15:58:09 DEBUG    accept
+2020-08-07 15:58:09 DEBUG    server port 18388 connections = 7
+2020-08-07 15:58:09 INFO     TCP connecting raw.githubusercontent.com:443 from ::ffff:111.40.35.2:43445
+2020-08-07 15:58:09 DEBUG    hit cache: b'raw.githubusercontent.com'
+2020-08-07 15:58:10 DEBUG    destroy: www.google.com:443
+2020-08-07 15:58:10 DEBUG    destroying remote
+2020-08-07 15:58:10 DEBUG    destroying local
+2020-08-07 15:58:10 DEBUG    server port 18388 connections = 6
+2020-08-07 15:58:13 DEBUG    accept
+2020-08-07 15:58:13 DEBUG    server port 18388 connections = 7
+2020-08-07 15:58:13 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:46611
+2020-08-07 15:58:13 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:58:23 DEBUG    destroy: www.google.com:443
+2020-08-07 15:58:23 DEBUG    destroying remote
+2020-08-07 15:58:23 DEBUG    destroying local
+2020-08-07 15:58:23 DEBUG    server port 18388 connections = 6
+2020-08-07 15:58:23 DEBUG    accept
+2020-08-07 15:58:23 DEBUG    server port 18388 connections = 7
+2020-08-07 15:58:23 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:56125
+2020-08-07 15:58:23 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:58:29 DEBUG    accept
+2020-08-07 15:58:29 DEBUG    server port 18388 connections = 8
+2020-08-07 15:58:29 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:10721
+2020-08-07 15:58:29 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:58:29 DEBUG    accept
+2020-08-07 15:58:29 DEBUG    server port 18388 connections = 9
+2020-08-07 15:58:29 INFO     TCP connecting raw.githubusercontent.com:443 from ::ffff:111.40.35.2:10855
+2020-08-07 15:58:29 DEBUG    hit cache: b'raw.githubusercontent.com'
+2020-08-07 15:58:33 DEBUG    destroy: www.google.com:443
+2020-08-07 15:58:33 DEBUG    destroying remote
+2020-08-07 15:58:33 DEBUG    destroying local
+2020-08-07 15:58:33 DEBUG    server port 18388 connections = 8
+2020-08-07 15:58:33 DEBUG    1 keys swept
+2020-08-07 15:58:38 DEBUG    accept
+2020-08-07 15:58:38 DEBUG    server port 18388 connections = 9
+2020-08-07 15:58:38 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:19632
+2020-08-07 15:58:38 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:58:38 DEBUG    accept
+2020-08-07 15:58:38 DEBUG    server port 18388 connections = 10
+2020-08-07 15:58:38 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:19677
+2020-08-07 15:58:38 DEBUG    hit cache: b'www.google.com'
+2020-08-07 15:58:39 DEBUG    destroy: www.google.com:443
+2020-08-07 15:58:39 DEBUG    destroying remote
+2020-08-07 15:58:39 DEBUG    destroying local
+2020-08-07 15:58:39 DEBUG    server port 18388 connections = 9
+2020-08-07 15:58:48 DEBUG    destroy: www.google.com:443
+2020-08-07 15:58:48 DEBUG    destroying remote
+2020-08-07 15:58:48 DEBUG    destroying local
+2020-08-07 15:58:48 DEBUG    server port 18388 connections = 8
+2020-08-07 15:59:09 DEBUG    destroy: ogs.google.com:443
+2020-08-07 15:59:09 DEBUG    destroying remote
+2020-08-07 15:59:09 DEBUG    destroying local
+2020-08-07 15:59:09 DEBUG    server port 18388 connections = 7
+2020-08-07 15:59:09 DEBUG    destroy: apis.google.com:443
+2020-08-07 15:59:09 DEBUG    destroying remote
+2020-08-07 15:59:09 DEBUG    destroying local
+2020-08-07 15:59:09 DEBUG    server port 18388 connections = 6
+2020-08-07 15:59:11 DEBUG    destroy: play.google.com:443
+2020-08-07 15:59:11 DEBUG    destroying remote
+2020-08-07 15:59:11 DEBUG    destroying local
+2020-08-07 15:59:11 DEBUG    server port 18388 connections = 5
+2020-08-07 15:59:41 DEBUG    1 keys swept
+2020-08-07 16:00:03 DEBUG    accept
+2020-08-07 16:00:03 DEBUG    server port 18388 connections = 6
+2020-08-07 16:00:03 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:46475
+2020-08-07 16:00:03 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:00:13 DEBUG    accept
+2020-08-07 16:00:13 DEBUG    server port 18388 connections = 7
+2020-08-07 16:00:13 DEBUG    3 keys swept
+2020-08-07 16:00:13 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:55058
+2020-08-07 16:00:13 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:00:13 DEBUG    destroy: www.google.com:443
+2020-08-07 16:00:13 DEBUG    destroying remote
+2020-08-07 16:00:13 DEBUG    destroying local
+2020-08-07 16:00:13 DEBUG    server port 18388 connections = 6
+2020-08-07 16:00:16 DEBUG    got local error
+2020-08-07 16:00:16 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:00:16 DEBUG    destroy: www.google.com:443
+2020-08-07 16:00:16 DEBUG    destroying remote
+2020-08-07 16:00:16 DEBUG    destroying local
+2020-08-07 16:00:16 DEBUG    server port 18388 connections = 5
+2020-08-07 16:00:21 DEBUG    accept
+2020-08-07 16:00:21 DEBUG    server port 18388 connections = 6
+2020-08-07 16:00:21 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:12293
+2020-08-07 16:00:21 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:00:31 DEBUG    destroy: www.google.com:443
+2020-08-07 16:00:31 DEBUG    destroying remote
+2020-08-07 16:00:31 DEBUG    destroying local
+2020-08-07 16:00:31 DEBUG    server port 18388 connections = 5
+INFO: loading config from /root/shadowsocksr/shadowsocks/../shadowsocks/../config.json
+2020-08-07 16:00:52 INFO     loading libcrypto from /root/miniconda3/lib/libcrypto.so.1.1
+2020-08-07 16:00:52 INFO     server start with protocol[origin] password [b'password'] method [aes-256-cfb] obfs [plain] obfs_param []
+2020-08-07 16:00:52 INFO     starting server at :::18388
+2020-08-07 16:00:52 DEBUG    using event model: epoll
+2020-08-07 16:00:55 DEBUG    accept
+2020-08-07 16:00:55 DEBUG    server port 18388 connections = 1
+2020-08-07 16:00:55 INFO     TCP connecting clients4.google.com:443 from ::ffff:111.40.35.2:39296
+2020-08-07 16:00:55 DEBUG    resolving b'clients4.google.com' with type 1 using server 8.8.8.8
+2020-08-07 16:01:00 DEBUG    accept
+2020-08-07 16:01:00 DEBUG    server port 18388 connections = 2
+2020-08-07 16:01:00 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:46740
+2020-08-07 16:01:00 DEBUG    resolving b'www.google.com' with type 1 using server 8.8.8.8
+2020-08-07 16:01:05 DEBUG    destroy: clients4.google.com:443
+2020-08-07 16:01:05 DEBUG    destroying remote
+2020-08-07 16:01:05 DEBUG    destroying local
+2020-08-07 16:01:05 DEBUG    server port 18388 connections = 1
+2020-08-07 16:01:10 DEBUG    accept
+2020-08-07 16:01:10 DEBUG    server port 18388 connections = 2
+2020-08-07 16:01:10 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:54558
+2020-08-07 16:01:10 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:01:10 DEBUG    destroy: www.google.com:443
+2020-08-07 16:01:10 DEBUG    destroying remote
+2020-08-07 16:01:10 DEBUG    destroying local
+2020-08-07 16:01:10 DEBUG    server port 18388 connections = 1
+2020-08-07 16:01:20 DEBUG    destroy: www.google.com:443
+2020-08-07 16:01:20 DEBUG    destroying remote
+2020-08-07 16:01:20 DEBUG    destroying local
+2020-08-07 16:01:20 DEBUG    server port 18388 connections = 0
+2020-08-07 16:01:23 DEBUG    accept
+2020-08-07 16:01:23 DEBUG    server port 18388 connections = 1
+2020-08-07 16:01:23 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:15338
+2020-08-07 16:01:23 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:01:32 DEBUG    accept
+2020-08-07 16:01:32 DEBUG    server port 18388 connections = 2
+2020-08-07 16:01:32 INFO     TCP connecting nexus.officeapps.live.com:443 from ::ffff:111.40.35.2:22849
+2020-08-07 16:01:32 DEBUG    resolving b'nexus.officeapps.live.com' with type 1 using server 8.8.8.8
+2020-08-07 16:01:33 DEBUG    accept
+2020-08-07 16:01:33 DEBUG    server port 18388 connections = 3
+2020-08-07 16:01:33 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:23562
+2020-08-07 16:01:33 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:01:33 DEBUG    destroy: www.google.com:443
+2020-08-07 16:01:33 DEBUG    destroying remote
+2020-08-07 16:01:33 DEBUG    destroying local
+2020-08-07 16:01:33 DEBUG    server port 18388 connections = 2
+2020-08-07 16:01:43 DEBUG    destroy: www.google.com:443
+2020-08-07 16:01:43 DEBUG    destroying remote
+2020-08-07 16:01:43 DEBUG    destroying local
+2020-08-07 16:01:43 DEBUG    server port 18388 connections = 1
+2020-08-07 16:02:10 DEBUG    accept
+2020-08-07 16:02:10 DEBUG    server port 18388 connections = 2
+2020-08-07 16:02:10 INFO     TCP connecting mtalk.google.com:5228 from ::ffff:111.40.35.2:53999
+2020-08-07 16:02:10 DEBUG    resolving b'mtalk.google.com' with type 1 using server 8.8.8.8
+2020-08-07 16:02:20 DEBUG    destroy: mtalk.google.com:5228
+2020-08-07 16:02:20 DEBUG    destroying remote
+2020-08-07 16:02:20 DEBUG    destroying local
+2020-08-07 16:02:20 DEBUG    server port 18388 connections = 1
+2020-08-07 16:02:49 DEBUG    accept
+2020-08-07 16:02:49 DEBUG    server port 18388 connections = 2
+2020-08-07 16:02:49 INFO     TCP connecting www.googleapis.com:443 from ::ffff:111.40.35.2:36482
+2020-08-07 16:02:49 DEBUG    resolving b'www.googleapis.com' with type 1 using server 8.8.8.8
+2020-08-07 16:02:49 DEBUG    accept
+2020-08-07 16:02:49 DEBUG    server port 18388 connections = 3
+2020-08-07 16:02:49 INFO     TCP connecting az764295.vo.msecnd.net:443 from ::ffff:111.40.35.2:36969
+2020-08-07 16:02:49 DEBUG    resolving b'az764295.vo.msecnd.net' with type 1 using server 8.8.8.8
+2020-08-07 16:02:55 DEBUG    accept
+2020-08-07 16:02:55 DEBUG    server port 18388 connections = 4
+2020-08-07 16:02:55 INFO     TCP connecting www.googleapis.com:443 from ::ffff:111.40.35.2:41125
+2020-08-07 16:02:55 DEBUG    hit cache: b'www.googleapis.com'
+2020-08-07 16:02:56 DEBUG    accept
+2020-08-07 16:02:56 DEBUG    server port 18388 connections = 5
+2020-08-07 16:02:56 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:41853
+2020-08-07 16:02:56 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:02:59 DEBUG    destroy: www.googleapis.com:443
+2020-08-07 16:02:59 DEBUG    destroying remote
+2020-08-07 16:02:59 DEBUG    destroying local
+2020-08-07 16:02:59 DEBUG    server port 18388 connections = 4
+2020-08-07 16:03:05 DEBUG    destroy: www.googleapis.com:443
+2020-08-07 16:03:05 DEBUG    destroying remote
+2020-08-07 16:03:05 DEBUG    destroying local
+2020-08-07 16:03:05 DEBUG    server port 18388 connections = 3
+2020-08-07 16:03:05 DEBUG    accept
+2020-08-07 16:03:05 DEBUG    server port 18388 connections = 4
+2020-08-07 16:03:05 INFO     TCP connecting ogs.google.com:443 from ::ffff:111.40.35.2:49989
+2020-08-07 16:03:05 DEBUG    resolving b'ogs.google.com' with type 1 using server 8.8.8.8
+2020-08-07 16:03:07 DEBUG    accept
+2020-08-07 16:03:07 DEBUG    server port 18388 connections = 5
+2020-08-07 16:03:07 INFO     TCP connecting play.google.com:443 from ::ffff:111.40.35.2:51156
+2020-08-07 16:03:07 DEBUG    resolving b'play.google.com' with type 1 using server 8.8.8.8
+2020-08-07 16:03:07 DEBUG    accept
+2020-08-07 16:03:07 DEBUG    server port 18388 connections = 6
+2020-08-07 16:03:07 INFO     TCP connecting www.googleapis.com:443 from ::ffff:111.40.35.2:51450
+2020-08-07 16:03:07 DEBUG    hit cache: b'www.googleapis.com'
+2020-08-07 16:03:08 DEBUG    got local error
+2020-08-07 16:03:08 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:03:08 DEBUG    destroy: www.google.com:443
+2020-08-07 16:03:08 DEBUG    destroying remote
+2020-08-07 16:03:08 DEBUG    destroying local
+2020-08-07 16:03:08 DEBUG    server port 18388 connections = 5
+2020-08-07 16:03:08 DEBUG    accept
+2020-08-07 16:03:08 DEBUG    server port 18388 connections = 6
+2020-08-07 16:03:08 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:52371
+2020-08-07 16:03:08 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:03:10 DEBUG    accept
+2020-08-07 16:03:10 DEBUG    server port 18388 connections = 7
+2020-08-07 16:03:10 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:53628
+2020-08-07 16:03:10 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:03:16 DEBUG    accept
+2020-08-07 16:03:16 DEBUG    server port 18388 connections = 8
+2020-08-07 16:03:16 INFO     TCP connecting www.googleapis.com:443 from ::ffff:111.40.35.2:59262
+2020-08-07 16:03:16 DEBUG    hit cache: b'www.googleapis.com'
+2020-08-07 16:03:17 DEBUG    destroy: www.googleapis.com:443
+2020-08-07 16:03:17 DEBUG    destroying remote
+2020-08-07 16:03:17 DEBUG    destroying local
+2020-08-07 16:03:17 DEBUG    server port 18388 connections = 7
+2020-08-07 16:03:18 DEBUG    accept
+2020-08-07 16:03:18 DEBUG    server port 18388 connections = 8
+2020-08-07 16:03:18 INFO     TCP connecting play.google.com:443 from ::ffff:111.40.35.2:10726
+2020-08-07 16:03:18 DEBUG    hit cache: b'play.google.com'
+2020-08-07 16:03:18 DEBUG    destroy: www.google.com:443
+2020-08-07 16:03:18 DEBUG    destroying remote
+2020-08-07 16:03:18 DEBUG    destroying local
+2020-08-07 16:03:18 DEBUG    server port 18388 connections = 7
+2020-08-07 16:03:20 DEBUG    destroy: www.google.com:443
+2020-08-07 16:03:20 DEBUG    destroying remote
+2020-08-07 16:03:20 DEBUG    destroying local
+2020-08-07 16:03:20 DEBUG    server port 18388 connections = 6
+2020-08-07 16:03:21 DEBUG    got local error
+2020-08-07 16:03:21 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:03:21 DEBUG    destroy: www.googleapis.com:443
+2020-08-07 16:03:21 DEBUG    destroying remote
+2020-08-07 16:03:21 DEBUG    destroying local
+2020-08-07 16:03:21 DEBUG    server port 18388 connections = 5
+2020-08-07 16:03:23 DEBUG    accept
+2020-08-07 16:03:23 DEBUG    server port 18388 connections = 6
+2020-08-07 16:03:23 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:14596
+2020-08-07 16:03:23 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:03:25 DEBUG    accept
+2020-08-07 16:03:25 DEBUG    server port 18388 connections = 7
+2020-08-07 16:03:25 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:16664
+2020-08-07 16:03:25 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:03:25 DEBUG    accept
+2020-08-07 16:03:25 DEBUG    server port 18388 connections = 8
+2020-08-07 16:03:25 INFO     TCP connecting play.google.com:443 from ::ffff:111.40.35.2:16728
+2020-08-07 16:03:25 DEBUG    hit cache: b'play.google.com'
+2020-08-07 16:03:28 DEBUG    accept
+2020-08-07 16:03:28 DEBUG    server port 18388 connections = 9
+2020-08-07 16:03:28 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:18804
+2020-08-07 16:03:28 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:03:29 DEBUG    accept
+2020-08-07 16:03:29 DEBUG    server port 18388 connections = 10
+2020-08-07 16:03:30 INFO     TCP connecting www.googleapis.com:443 from ::ffff:111.40.35.2:20164
+2020-08-07 16:03:30 DEBUG    hit cache: b'www.googleapis.com'
+2020-08-07 16:03:33 DEBUG    destroy: www.google.com:443
+2020-08-07 16:03:33 DEBUG    destroying remote
+2020-08-07 16:03:33 DEBUG    destroying local
+2020-08-07 16:03:33 DEBUG    server port 18388 connections = 9
+2020-08-07 16:03:35 DEBUG    destroy: www.google.com:443
+2020-08-07 16:03:35 DEBUG    destroying remote
+2020-08-07 16:03:35 DEBUG    destroying local
+2020-08-07 16:03:35 DEBUG    server port 18388 connections = 8
+2020-08-07 16:03:36 DEBUG    got remote error
+2020-08-07 16:03:36 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:03:36 DEBUG    destroy: nexus.officeapps.live.com:443
+2020-08-07 16:03:36 DEBUG    destroying remote
+2020-08-07 16:03:36 DEBUG    destroying local
+2020-08-07 16:03:36 DEBUG    server port 18388 connections = 7
+2020-08-07 16:03:37 DEBUG    got local error
+2020-08-07 16:03:37 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:03:37 DEBUG    destroy: www.google.com:443
+2020-08-07 16:03:37 DEBUG    destroying remote
+2020-08-07 16:03:37 DEBUG    destroying local
+2020-08-07 16:03:37 DEBUG    server port 18388 connections = 6
+2020-08-07 16:03:38 DEBUG    got local error
+2020-08-07 16:03:38 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:03:38 DEBUG    destroy: www.googleapis.com:443
+2020-08-07 16:03:38 DEBUG    destroying remote
+2020-08-07 16:03:38 DEBUG    destroying local
+2020-08-07 16:03:38 DEBUG    server port 18388 connections = 5
+2020-08-07 16:03:40 DEBUG    got local error
+2020-08-07 16:03:40 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:03:40 DEBUG    destroy: ogs.google.com:443
+2020-08-07 16:03:40 DEBUG    destroying remote
+2020-08-07 16:03:40 DEBUG    destroying local
+2020-08-07 16:03:40 DEBUG    server port 18388 connections = 4
+2020-08-07 16:03:41 DEBUG    got local error
+2020-08-07 16:03:41 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:03:41 DEBUG    destroy: play.google.com:443
+2020-08-07 16:03:41 DEBUG    destroying remote
+2020-08-07 16:03:41 DEBUG    destroying local
+2020-08-07 16:03:41 DEBUG    server port 18388 connections = 3
+2020-08-07 16:03:43 DEBUG    got local error
+2020-08-07 16:03:43 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:03:43 DEBUG    destroy: play.google.com:443
+2020-08-07 16:03:43 DEBUG    destroying remote
+2020-08-07 16:03:43 DEBUG    destroying local
+2020-08-07 16:03:43 DEBUG    server port 18388 connections = 2
+2020-08-07 16:03:51 DEBUG    destroy: az764295.vo.msecnd.net:443
+2020-08-07 16:03:51 DEBUG    destroying remote
+2020-08-07 16:03:51 DEBUG    destroying local
+2020-08-07 16:03:51 DEBUG    server port 18388 connections = 1
+2020-08-07 16:03:51 DEBUG    accept
+2020-08-07 16:03:51 DEBUG    server port 18388 connections = 2
+2020-08-07 16:03:51 INFO     TCP connecting www.googleapis.com:443 from ::ffff:111.40.35.2:38743
+2020-08-07 16:03:51 DEBUG    hit cache: b'www.googleapis.com'
+2020-08-07 16:03:51 DEBUG    accept
+2020-08-07 16:03:51 DEBUG    server port 18388 connections = 3
+2020-08-07 16:03:51 INFO     TCP connecting clients4.google.com:443 from ::ffff:111.40.35.2:38991
+2020-08-07 16:03:51 DEBUG    hit cache: b'clients4.google.com'
+2020-08-07 16:03:52 DEBUG    got local error
+2020-08-07 16:03:52 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:03:52 DEBUG    destroy: play.google.com:443
+2020-08-07 16:03:52 DEBUG    destroying remote
+2020-08-07 16:03:52 DEBUG    destroying local
+2020-08-07 16:03:52 DEBUG    server port 18388 connections = 2
+2020-08-07 16:04:23 DEBUG    got local error
+2020-08-07 16:04:23 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:04:23 DEBUG    destroy: clients4.google.com:443
+2020-08-07 16:04:23 DEBUG    destroying remote
+2020-08-07 16:04:23 DEBUG    destroying local
+2020-08-07 16:04:23 DEBUG    server port 18388 connections = 1
+2020-08-07 16:04:23 DEBUG    accept
+2020-08-07 16:04:23 DEBUG    server port 18388 connections = 2
+2020-08-07 16:04:23 INFO     TCP connecting clients4.google.com:443 from ::ffff:111.40.35.2:13840
+2020-08-07 16:04:23 DEBUG    hit cache: b'clients4.google.com'
+2020-08-07 16:04:48 DEBUG    accept
+2020-08-07 16:04:48 DEBUG    server port 18388 connections = 3
+2020-08-07 16:04:48 INFO     TCP connecting android.clients.google.com:443 from ::ffff:111.40.35.2:35046
+2020-08-07 16:04:48 DEBUG    resolving b'android.clients.google.com' with type 1 using server 8.8.8.8
+2020-08-07 16:04:49 DEBUG    got local error
+2020-08-07 16:04:49 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:04:49 DEBUG    destroy: clients4.google.com:443
+2020-08-07 16:04:49 DEBUG    destroying remote
+2020-08-07 16:04:49 DEBUG    destroying local
+2020-08-07 16:04:49 DEBUG    server port 18388 connections = 2
+2020-08-07 16:04:49 DEBUG    accept
+2020-08-07 16:04:49 DEBUG    server port 18388 connections = 3
+2020-08-07 16:04:49 INFO     TCP connecting clients4.google.com:443 from ::ffff:111.40.35.2:35447
+2020-08-07 16:04:49 DEBUG    hit cache: b'clients4.google.com'
+2020-08-07 16:06:39 DEBUG    1 keys swept
+2020-08-07 16:07:19 DEBUG    1 keys swept
+2020-08-07 16:07:51 DEBUG    destroy: www.googleapis.com:443
+2020-08-07 16:07:51 DEBUG    destroying remote
+2020-08-07 16:07:51 DEBUG    destroying local
+2020-08-07 16:07:51 DEBUG    server port 18388 connections = 2
+2020-08-07 16:07:52 DEBUG    accept
+2020-08-07 16:07:52 DEBUG    server port 18388 connections = 3
+2020-08-07 16:07:52 INFO     TCP connecting az764295.vo.msecnd.net:443 from ::ffff:111.40.35.2:34954
+2020-08-07 16:07:52 DEBUG    hit cache: b'az764295.vo.msecnd.net'
+2020-08-07 16:08:13 DEBUG    1 keys swept
+2020-08-07 16:08:33 DEBUG    2 keys swept
+2020-08-07 16:08:48 DEBUG    destroy: android.clients.google.com:443
+2020-08-07 16:08:48 DEBUG    destroying remote
+2020-08-07 16:08:48 DEBUG    destroying local
+2020-08-07 16:08:48 DEBUG    server port 18388 connections = 2
+2020-08-07 16:08:49 DEBUG    destroy: clients4.google.com:443
+2020-08-07 16:08:49 DEBUG    destroying remote
+2020-08-07 16:08:49 DEBUG    destroying local
+2020-08-07 16:08:49 DEBUG    server port 18388 connections = 1
+2020-08-07 16:08:59 DEBUG    1 keys swept
+2020-08-07 16:09:49 DEBUG    2 keys swept
+2020-08-07 16:10:52 DEBUG    destroy: az764295.vo.msecnd.net:443
+2020-08-07 16:10:52 DEBUG    destroying remote
+2020-08-07 16:10:52 DEBUG    destroying local
+2020-08-07 16:10:52 DEBUG    server port 18388 connections = 0
+2020-08-07 16:11:04 DEBUG    accept
+2020-08-07 16:11:04 DEBUG    server port 18388 connections = 1
+2020-08-07 16:11:04 INFO     TCP connecting clients4.google.com:443 from ::ffff:111.40.35.2:39020
+2020-08-07 16:11:04 DEBUG    resolving b'clients4.google.com' with type 1 using server 8.8.8.8
+2020-08-07 16:12:20 DEBUG    accept
+2020-08-07 16:12:20 DEBUG    server port 18388 connections = 2
+2020-08-07 16:12:20 INFO     TCP connecting mtalk.google.com:5228 from ::ffff:111.40.35.2:45161
+2020-08-07 16:12:20 DEBUG    resolving b'mtalk.google.com' with type 1 using server 8.8.8.8
+2020-08-07 16:12:30 DEBUG    destroy: mtalk.google.com:5228
+2020-08-07 16:12:30 DEBUG    destroying remote
+2020-08-07 16:12:30 DEBUG    destroying local
+2020-08-07 16:12:30 DEBUG    server port 18388 connections = 1
+2020-08-07 16:12:54 DEBUG    accept
+2020-08-07 16:12:54 DEBUG    server port 18388 connections = 2
+2020-08-07 16:12:54 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:23871
+2020-08-07 16:12:54 DEBUG    resolving b'www.google.com' with type 1 using server 8.8.8.8
+2020-08-07 16:12:55 DEBUG    accept
+2020-08-07 16:12:55 DEBUG    server port 18388 connections = 3
+2020-08-07 16:12:55 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:24713
+2020-08-07 16:12:55 DEBUG    resolving b'www.youtube.com' with type 1 using server 8.8.8.8
+2020-08-07 16:12:56 DEBUG    accept
+2020-08-07 16:12:56 DEBUG    server port 18388 connections = 4
+2020-08-07 16:12:56 INFO     TCP connecting i.ytimg.com:443 from ::ffff:111.40.35.2:25242
+2020-08-07 16:12:56 DEBUG    resolving b'i.ytimg.com' with type 1 using server 8.8.8.8
+2020-08-07 16:13:01 DEBUG    1 keys swept
+2020-08-07 16:13:12 DEBUG    accept
+2020-08-07 16:13:12 DEBUG    server port 18388 connections = 5
+2020-08-07 16:13:12 INFO     TCP connecting www.google.com.hk:443 from ::ffff:111.40.35.2:39549
+2020-08-07 16:13:12 DEBUG    resolving b'www.google.com.hk' with type 1 using server 8.8.8.8
+2020-08-07 16:13:13 DEBUG    accept
+2020-08-07 16:13:13 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:13 INFO     TCP connecting lh5.googleusercontent.com:443 from ::ffff:111.40.35.2:39878
+2020-08-07 16:13:13 DEBUG    resolving b'lh5.googleusercontent.com' with type 1 using server 8.8.8.8
+2020-08-07 16:13:13 DEBUG    accept
+2020-08-07 16:13:13 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:13 INFO     TCP connecting encrypted-tbn0.gstatic.com:443 from ::ffff:111.40.35.2:40170
+2020-08-07 16:13:13 DEBUG    resolving b'encrypted-tbn0.gstatic.com' with type 1 using server 8.8.8.8
+2020-08-07 16:13:15 DEBUG    accept
+2020-08-07 16:13:15 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:15 INFO     TCP connecting ogs.google.com:443 from ::ffff:111.40.35.2:42292
+2020-08-07 16:13:15 DEBUG    resolving b'ogs.google.com' with type 1 using server 8.8.8.8
+2020-08-07 16:13:16 DEBUG    got local error
+2020-08-07 16:13:16 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:16 DEBUG    destroy: www.youtube.com:443
+2020-08-07 16:13:16 DEBUG    destroying remote
+2020-08-07 16:13:16 DEBUG    destroying local
+2020-08-07 16:13:16 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:16 DEBUG    accept
+2020-08-07 16:13:16 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:16 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:43221
+2020-08-07 16:13:16 DEBUG    hit cache: b'www.youtube.com'
+2020-08-07 16:13:16 DEBUG    accept
+2020-08-07 16:13:16 DEBUG    server port 18388 connections = 9
+2020-08-07 16:13:16 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:43390
+2020-08-07 16:13:16 DEBUG    resolving b'medium.com' with type 1 using server 8.8.8.8
+2020-08-07 16:13:16 DEBUG    got local error
+2020-08-07 16:13:16 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:16 DEBUG    destroy: www.google.com:443
+2020-08-07 16:13:16 DEBUG    destroying remote
+2020-08-07 16:13:16 DEBUG    destroying local
+2020-08-07 16:13:16 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:17 DEBUG    got local error
+2020-08-07 16:13:17 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:17 DEBUG    destroy: www.youtube.com:443
+2020-08-07 16:13:17 DEBUG    destroying remote
+2020-08-07 16:13:17 DEBUG    destroying local
+2020-08-07 16:13:17 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:17 DEBUG    accept
+2020-08-07 16:13:17 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:17 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:43904
+2020-08-07 16:13:17 DEBUG    hit cache: b'www.youtube.com'
+2020-08-07 16:13:17 DEBUG    got local error
+2020-08-07 16:13:17 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:17 DEBUG    destroy: www.youtube.com:443
+2020-08-07 16:13:17 DEBUG    destroying remote
+2020-08-07 16:13:17 DEBUG    destroying local
+2020-08-07 16:13:17 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:18 DEBUG    accept
+2020-08-07 16:13:18 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:18 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:43471
+2020-08-07 16:13:18 DEBUG    hit cache: b'www.youtube.com'
+2020-08-07 16:13:18 DEBUG    destroy: www.youtube.com:443
+2020-08-07 16:13:18 DEBUG    destroying remote
+2020-08-07 16:13:18 DEBUG    destroying local
+2020-08-07 16:13:18 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:18 DEBUG    accept
+2020-08-07 16:13:18 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:18 INFO     TCP connecting 1.1.1.3:80 from ::ffff:111.40.35.2:44004
+2020-08-07 16:13:18 DEBUG    destroy: 1.1.1.3:80
+2020-08-07 16:13:18 DEBUG    destroying remote
+2020-08-07 16:13:18 DEBUG    destroying local
+2020-08-07 16:13:18 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:18 DEBUG    accept
+2020-08-07 16:13:18 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:18 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:44980
+2020-08-07 16:13:18 DEBUG    hit cache: b'www.youtube.com'
+2020-08-07 16:13:18 DEBUG    accept
+2020-08-07 16:13:18 DEBUG    server port 18388 connections = 9
+2020-08-07 16:13:18 INFO     TCP connecting one.one.one.one:443 from ::ffff:111.40.35.2:45036
+2020-08-07 16:13:18 DEBUG    resolving b'one.one.one.one' with type 1 using server 8.8.8.8
+2020-08-07 16:13:19 DEBUG    got local error
+2020-08-07 16:13:19 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:19 DEBUG    destroy: one.one.one.one:443
+2020-08-07 16:13:19 DEBUG    destroying remote
+2020-08-07 16:13:19 DEBUG    destroying local
+2020-08-07 16:13:19 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:19 DEBUG    accept
+2020-08-07 16:13:19 DEBUG    server port 18388 connections = 9
+2020-08-07 16:13:19 INFO     TCP connecting ocsp.digicert.com:80 from ::ffff:111.40.35.2:45625
+2020-08-07 16:13:19 DEBUG    resolving b'ocsp.digicert.com' with type 1 using server 8.8.8.8
+2020-08-07 16:13:19 DEBUG    destroy: ocsp.digicert.com:80
+2020-08-07 16:13:19 DEBUG    destroying remote
+2020-08-07 16:13:19 DEBUG    destroying local
+2020-08-07 16:13:19 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:19 DEBUG    accept
+2020-08-07 16:13:19 DEBUG    server port 18388 connections = 9
+2020-08-07 16:13:19 INFO     TCP connecting ocsp.digicert.com:80 from ::ffff:111.40.35.2:45786
+2020-08-07 16:13:19 DEBUG    hit cache: b'ocsp.digicert.com'
+2020-08-07 16:13:20 DEBUG    accept
+2020-08-07 16:13:20 DEBUG    server port 18388 connections = 10
+2020-08-07 16:13:20 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:46682
+2020-08-07 16:13:20 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:13:20 DEBUG    destroy: ocsp.digicert.com:80
+2020-08-07 16:13:20 DEBUG    destroying remote
+2020-08-07 16:13:20 DEBUG    destroying local
+2020-08-07 16:13:20 DEBUG    server port 18388 connections = 9
+2020-08-07 16:13:22 DEBUG    got local error
+2020-08-07 16:13:22 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:22 DEBUG    destroy: medium.com:443
+2020-08-07 16:13:22 DEBUG    destroying remote
+2020-08-07 16:13:22 DEBUG    destroying local
+2020-08-07 16:13:22 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:22 DEBUG    accept
+2020-08-07 16:13:22 DEBUG    server port 18388 connections = 9
+2020-08-07 16:13:22 INFO     TCP connecting cdn.optimizely.com:443 from ::ffff:111.40.35.2:48074
+2020-08-07 16:13:22 DEBUG    resolving b'cdn.optimizely.com' with type 1 using server 8.8.8.8
+2020-08-07 16:13:22 DEBUG    accept
+2020-08-07 16:13:22 DEBUG    server port 18388 connections = 10
+2020-08-07 16:13:22 INFO     TCP connecting glyph.medium.com:443 from ::ffff:111.40.35.2:48138
+2020-08-07 16:13:22 DEBUG    resolving b'glyph.medium.com' with type 1 using server 8.8.8.8
+2020-08-07 16:13:22 DEBUG    accept
+2020-08-07 16:13:22 DEBUG    server port 18388 connections = 11
+2020-08-07 16:13:22 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:48191
+2020-08-07 16:13:22 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:13:22 DEBUG    got local error
+2020-08-07 16:13:22 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:22 DEBUG    destroy: cdn.optimizely.com:443
+2020-08-07 16:13:22 DEBUG    destroying remote
+2020-08-07 16:13:22 DEBUG    destroying local
+2020-08-07 16:13:22 DEBUG    server port 18388 connections = 10
+2020-08-07 16:13:22 DEBUG    got local error
+2020-08-07 16:13:22 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:22 DEBUG    destroy: glyph.medium.com:443
+2020-08-07 16:13:22 DEBUG    destroying remote
+2020-08-07 16:13:22 DEBUG    destroying local
+2020-08-07 16:13:22 DEBUG    server port 18388 connections = 9
+2020-08-07 16:13:23 DEBUG    got local error
+2020-08-07 16:13:23 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:23 DEBUG    destroy: medium.com:443
+2020-08-07 16:13:23 DEBUG    destroying remote
+2020-08-07 16:13:23 DEBUG    destroying local
+2020-08-07 16:13:23 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:23 DEBUG    accept
+2020-08-07 16:13:23 DEBUG    server port 18388 connections = 9
+2020-08-07 16:13:23 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:49031
+2020-08-07 16:13:23 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:13:24 DEBUG    got local error
+2020-08-07 16:13:24 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:24 DEBUG    destroy: medium.com:443
+2020-08-07 16:13:24 DEBUG    destroying remote
+2020-08-07 16:13:24 DEBUG    destroying local
+2020-08-07 16:13:24 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:24 DEBUG    accept
+2020-08-07 16:13:24 DEBUG    server port 18388 connections = 9
+2020-08-07 16:13:24 DEBUG    accept
+2020-08-07 16:13:24 DEBUG    server port 18388 connections = 10
+2020-08-07 16:13:24 INFO     TCP connecting cdn.optimizely.com:443 from ::ffff:111.40.35.2:49626
+2020-08-07 16:13:24 DEBUG    hit cache: b'cdn.optimizely.com'
+2020-08-07 16:13:24 INFO     TCP connecting glyph.medium.com:443 from ::ffff:111.40.35.2:49628
+2020-08-07 16:13:24 DEBUG    hit cache: b'glyph.medium.com'
+2020-08-07 16:13:24 DEBUG    got local error
+2020-08-07 16:13:24 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:24 DEBUG    destroy: glyph.medium.com:443
+2020-08-07 16:13:24 DEBUG    destroying remote
+2020-08-07 16:13:24 DEBUG    destroying local
+2020-08-07 16:13:24 DEBUG    server port 18388 connections = 9
+2020-08-07 16:13:24 DEBUG    got local error
+2020-08-07 16:13:24 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:24 DEBUG    destroy: cdn.optimizely.com:443
+2020-08-07 16:13:24 DEBUG    destroying remote
+2020-08-07 16:13:24 DEBUG    destroying local
+2020-08-07 16:13:24 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:27 DEBUG    got local error
+2020-08-07 16:13:27 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:27 DEBUG    destroy: www.youtube.com:443
+2020-08-07 16:13:27 DEBUG    destroying remote
+2020-08-07 16:13:27 DEBUG    destroying local
+2020-08-07 16:13:27 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:27 DEBUG    accept
+2020-08-07 16:13:27 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:27 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:52435
+2020-08-07 16:13:27 DEBUG    hit cache: b'www.youtube.com'
+2020-08-07 16:13:28 DEBUG    destroy: ogs.google.com:443
+2020-08-07 16:13:28 DEBUG    destroying remote
+2020-08-07 16:13:28 DEBUG    destroying local
+2020-08-07 16:13:28 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:28 DEBUG    got local error
+2020-08-07 16:13:28 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:28 DEBUG    destroy: www.google.com:443
+2020-08-07 16:13:28 DEBUG    destroying remote
+2020-08-07 16:13:28 DEBUG    destroying local
+2020-08-07 16:13:28 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:28 DEBUG    got local error
+2020-08-07 16:13:28 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:28 DEBUG    destroy: www.youtube.com:443
+2020-08-07 16:13:28 DEBUG    destroying remote
+2020-08-07 16:13:28 DEBUG    destroying local
+2020-08-07 16:13:28 DEBUG    server port 18388 connections = 5
+2020-08-07 16:13:29 DEBUG    got local error
+2020-08-07 16:13:29 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:29 DEBUG    destroy: i.ytimg.com:443
+2020-08-07 16:13:29 DEBUG    destroying remote
+2020-08-07 16:13:29 DEBUG    destroying local
+2020-08-07 16:13:29 DEBUG    server port 18388 connections = 4
+2020-08-07 16:13:29 DEBUG    accept
+2020-08-07 16:13:29 DEBUG    server port 18388 connections = 5
+2020-08-07 16:13:29 INFO     TCP connecting i.ytimg.com:443 from ::ffff:111.40.35.2:53871
+2020-08-07 16:13:29 DEBUG    hit cache: b'i.ytimg.com'
+2020-08-07 16:13:29 DEBUG    accept
+2020-08-07 16:13:29 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:29 INFO     TCP connecting lh3.googleusercontent.com:443 from ::ffff:111.40.35.2:53895
+2020-08-07 16:13:29 DEBUG    resolving b'lh3.googleusercontent.com' with type 1 using server 8.8.8.8
+2020-08-07 16:13:29 DEBUG    accept
+2020-08-07 16:13:29 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:29 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:53992
+2020-08-07 16:13:29 DEBUG    hit cache: b'www.youtube.com'
+2020-08-07 16:13:29 DEBUG    got local error
+2020-08-07 16:13:29 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:29 DEBUG    destroy: i.ytimg.com:443
+2020-08-07 16:13:29 DEBUG    destroying remote
+2020-08-07 16:13:29 DEBUG    destroying local
+2020-08-07 16:13:29 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:30 DEBUG    got local error
+2020-08-07 16:13:30 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:30 DEBUG    destroy: www.youtube.com:443
+2020-08-07 16:13:30 DEBUG    destroying remote
+2020-08-07 16:13:30 DEBUG    destroying local
+2020-08-07 16:13:30 DEBUG    server port 18388 connections = 5
+2020-08-07 16:13:31 DEBUG    accept
+2020-08-07 16:13:31 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:31 INFO     TCP connecting i.ytimg.com:443 from ::ffff:111.40.35.2:55037
+2020-08-07 16:13:31 DEBUG    hit cache: b'i.ytimg.com'
+2020-08-07 16:13:31 DEBUG    got local error
+2020-08-07 16:13:31 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:31 DEBUG    destroy: i.ytimg.com:443
+2020-08-07 16:13:31 DEBUG    destroying remote
+2020-08-07 16:13:31 DEBUG    destroying local
+2020-08-07 16:13:31 DEBUG    server port 18388 connections = 5
+2020-08-07 16:13:31 DEBUG    accept
+2020-08-07 16:13:31 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:31 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:55183
+2020-08-07 16:13:31 DEBUG    hit cache: b'www.youtube.com'
+2020-08-07 16:13:33 DEBUG    accept
+2020-08-07 16:13:33 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:33 INFO     TCP connecting yt3.ggpht.com:443 from ::ffff:111.40.35.2:57076
+2020-08-07 16:13:33 DEBUG    resolving b'yt3.ggpht.com' with type 1 using server 8.8.8.8
+2020-08-07 16:13:33 DEBUG    got local error
+2020-08-07 16:13:33 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:33 DEBUG    destroy: yt3.ggpht.com:443
+2020-08-07 16:13:33 DEBUG    destroying remote
+2020-08-07 16:13:33 DEBUG    destroying local
+2020-08-07 16:13:33 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:33 DEBUG    accept
+2020-08-07 16:13:33 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:33 INFO     TCP connecting i.ytimg.com:443 from ::ffff:111.40.35.2:57254
+2020-08-07 16:13:33 DEBUG    hit cache: b'i.ytimg.com'
+2020-08-07 16:13:33 DEBUG    got local error
+2020-08-07 16:13:33 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:33 DEBUG    destroy: www.youtube.com:443
+2020-08-07 16:13:33 DEBUG    destroying remote
+2020-08-07 16:13:33 DEBUG    destroying local
+2020-08-07 16:13:33 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:33 DEBUG    got local error
+2020-08-07 16:13:33 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:33 DEBUG    destroy: i.ytimg.com:443
+2020-08-07 16:13:33 DEBUG    destroying remote
+2020-08-07 16:13:33 DEBUG    destroying local
+2020-08-07 16:13:33 DEBUG    server port 18388 connections = 5
+2020-08-07 16:13:34 DEBUG    accept
+2020-08-07 16:13:34 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:34 INFO     TCP connecting yt3.ggpht.com:443 from ::ffff:111.40.35.2:57468
+2020-08-07 16:13:34 DEBUG    hit cache: b'yt3.ggpht.com'
+2020-08-07 16:13:34 DEBUG    accept
+2020-08-07 16:13:34 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:34 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:57519
+2020-08-07 16:13:34 DEBUG    hit cache: b'www.youtube.com'
+2020-08-07 16:13:34 DEBUG    got local error
+2020-08-07 16:13:34 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:34 DEBUG    destroy: yt3.ggpht.com:443
+2020-08-07 16:13:34 DEBUG    destroying remote
+2020-08-07 16:13:34 DEBUG    destroying local
+2020-08-07 16:13:34 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:34 DEBUG    accept
+2020-08-07 16:13:34 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:34 INFO     TCP connecting i.ytimg.com:443 from ::ffff:111.40.35.2:57584
+2020-08-07 16:13:34 DEBUG    hit cache: b'i.ytimg.com'
+2020-08-07 16:13:34 DEBUG    got local error
+2020-08-07 16:13:34 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:34 DEBUG    destroy: i.ytimg.com:443
+2020-08-07 16:13:34 DEBUG    destroying remote
+2020-08-07 16:13:34 DEBUG    destroying local
+2020-08-07 16:13:34 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:34 DEBUG    accept
+2020-08-07 16:13:34 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:34 INFO     TCP connecting yt3.ggpht.com:443 from ::ffff:111.40.35.2:57803
+2020-08-07 16:13:34 DEBUG    hit cache: b'yt3.ggpht.com'
+2020-08-07 16:13:34 DEBUG    got local error
+2020-08-07 16:13:34 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:34 DEBUG    destroy: yt3.ggpht.com:443
+2020-08-07 16:13:34 DEBUG    destroying remote
+2020-08-07 16:13:34 DEBUG    destroying local
+2020-08-07 16:13:34 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:37 DEBUG    accept
+2020-08-07 16:13:37 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:37 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:10218
+2020-08-07 16:13:37 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:13:38 DEBUG    got local error
+2020-08-07 16:13:38 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:38 DEBUG    destroy: medium.com:443
+2020-08-07 16:13:38 DEBUG    destroying remote
+2020-08-07 16:13:38 DEBUG    destroying local
+2020-08-07 16:13:38 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:38 DEBUG    accept
+2020-08-07 16:13:38 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:38 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:11086
+2020-08-07 16:13:38 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:13:39 DEBUG    got local error
+2020-08-07 16:13:39 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:39 DEBUG    destroy: medium.com:443
+2020-08-07 16:13:39 DEBUG    destroying remote
+2020-08-07 16:13:39 DEBUG    destroying local
+2020-08-07 16:13:39 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:39 DEBUG    accept
+2020-08-07 16:13:39 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:39 INFO     TCP connecting cdn.optimizely.com:443 from ::ffff:111.40.35.2:11712
+2020-08-07 16:13:39 DEBUG    hit cache: b'cdn.optimizely.com'
+2020-08-07 16:13:39 DEBUG    accept
+2020-08-07 16:13:39 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:39 INFO     TCP connecting glyph.medium.com:443 from ::ffff:111.40.35.2:11713
+2020-08-07 16:13:39 DEBUG    hit cache: b'glyph.medium.com'
+2020-08-07 16:13:39 DEBUG    got local error
+2020-08-07 16:13:39 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:39 DEBUG    destroy: glyph.medium.com:443
+2020-08-07 16:13:39 DEBUG    destroying remote
+2020-08-07 16:13:39 DEBUG    destroying local
+2020-08-07 16:13:39 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:39 DEBUG    got local error
+2020-08-07 16:13:39 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:39 DEBUG    destroy: cdn.optimizely.com:443
+2020-08-07 16:13:39 DEBUG    destroying remote
+2020-08-07 16:13:39 DEBUG    destroying local
+2020-08-07 16:13:39 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:41 DEBUG    got local error
+2020-08-07 16:13:41 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:41 DEBUG    destroy: www.youtube.com:443
+2020-08-07 16:13:41 DEBUG    destroying remote
+2020-08-07 16:13:41 DEBUG    destroying local
+2020-08-07 16:13:41 DEBUG    server port 18388 connections = 5
+2020-08-07 16:13:41 DEBUG    accept
+2020-08-07 16:13:41 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:41 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:14061
+2020-08-07 16:13:41 DEBUG    hit cache: b'www.youtube.com'
+2020-08-07 16:13:42 DEBUG    got local error
+2020-08-07 16:13:42 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:42 DEBUG    destroy: www.youtube.com:443
+2020-08-07 16:13:42 DEBUG    destroying remote
+2020-08-07 16:13:42 DEBUG    destroying local
+2020-08-07 16:13:42 DEBUG    server port 18388 connections = 5
+2020-08-07 16:13:47 DEBUG    accept
+2020-08-07 16:13:47 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:47 INFO     TCP connecting www.youtube.com:443 from ::ffff:111.40.35.2:18547
+2020-08-07 16:13:47 DEBUG    hit cache: b'www.youtube.com'
+2020-08-07 16:13:49 DEBUG    accept
+2020-08-07 16:13:49 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:49 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:19832
+2020-08-07 16:13:49 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:13:49 DEBUG    got local error
+2020-08-07 16:13:49 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:49 DEBUG    destroy: medium.com:443
+2020-08-07 16:13:49 DEBUG    destroying remote
+2020-08-07 16:13:49 DEBUG    destroying local
+2020-08-07 16:13:49 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:49 DEBUG    accept
+2020-08-07 16:13:49 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:49 DEBUG    accept
+2020-08-07 16:13:49 DEBUG    server port 18388 connections = 8
+2020-08-07 16:13:49 INFO     TCP connecting glyph.medium.com:443 from ::ffff:111.40.35.2:20415
+2020-08-07 16:13:49 DEBUG    hit cache: b'glyph.medium.com'
+2020-08-07 16:13:49 INFO     TCP connecting cdn.optimizely.com:443 from ::ffff:111.40.35.2:20417
+2020-08-07 16:13:49 DEBUG    hit cache: b'cdn.optimizely.com'
+2020-08-07 16:13:50 DEBUG    got local error
+2020-08-07 16:13:50 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:50 DEBUG    destroy: glyph.medium.com:443
+2020-08-07 16:13:50 DEBUG    destroying remote
+2020-08-07 16:13:50 DEBUG    destroying local
+2020-08-07 16:13:50 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:50 DEBUG    got local error
+2020-08-07 16:13:50 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:50 DEBUG    destroy: cdn.optimizely.com:443
+2020-08-07 16:13:50 DEBUG    destroying remote
+2020-08-07 16:13:50 DEBUG    destroying local
+2020-08-07 16:13:50 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:53 DEBUG    accept
+2020-08-07 16:13:53 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:53 INFO     TCP connecting 1.1.1.3:80 from ::ffff:111.40.35.2:21253
+2020-08-07 16:13:53 DEBUG    destroy: 1.1.1.3:80
+2020-08-07 16:13:53 DEBUG    destroying remote
+2020-08-07 16:13:53 DEBUG    destroying local
+2020-08-07 16:13:53 DEBUG    server port 18388 connections = 6
+2020-08-07 16:13:54 DEBUG    accept
+2020-08-07 16:13:54 DEBUG    server port 18388 connections = 7
+2020-08-07 16:13:54 INFO     TCP connecting one.one.one.one:443 from ::ffff:111.40.35.2:23692
+2020-08-07 16:13:54 DEBUG    hit cache: b'one.one.one.one'
+2020-08-07 16:13:54 DEBUG    got local error
+2020-08-07 16:13:54 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:13:54 DEBUG    destroy: one.one.one.one:443
+2020-08-07 16:13:54 DEBUG    destroying remote
+2020-08-07 16:13:54 DEBUG    destroying local
+2020-08-07 16:13:54 DEBUG    server port 18388 connections = 6
+2020-08-07 16:14:48 DEBUG    accept
+2020-08-07 16:14:48 DEBUG    server port 18388 connections = 7
+2020-08-07 16:14:48 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:18465
+2020-08-07 16:14:48 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:14:48 DEBUG    destroy: www.youtube.com:443
+2020-08-07 16:14:48 DEBUG    destroying remote
+2020-08-07 16:14:48 DEBUG    destroying local
+2020-08-07 16:14:48 DEBUG    server port 18388 connections = 6
+2020-08-07 16:14:49 DEBUG    got local error
+2020-08-07 16:14:49 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:14:49 DEBUG    destroy: medium.com:443
+2020-08-07 16:14:49 DEBUG    destroying remote
+2020-08-07 16:14:49 DEBUG    destroying local
+2020-08-07 16:14:49 DEBUG    server port 18388 connections = 5
+2020-08-07 16:14:49 DEBUG    accept
+2020-08-07 16:14:49 DEBUG    server port 18388 connections = 6
+2020-08-07 16:14:49 INFO     TCP connecting cdn.optimizely.com:443 from ::ffff:111.40.35.2:19009
+2020-08-07 16:14:49 DEBUG    hit cache: b'cdn.optimizely.com'
+2020-08-07 16:14:49 DEBUG    got local error
+2020-08-07 16:14:49 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:14:49 DEBUG    destroy: cdn.optimizely.com:443
+2020-08-07 16:14:49 DEBUG    destroying remote
+2020-08-07 16:14:49 DEBUG    destroying local
+2020-08-07 16:14:49 DEBUG    server port 18388 connections = 5
+2020-08-07 16:14:50 DEBUG    accept
+2020-08-07 16:14:50 DEBUG    server port 18388 connections = 6
+2020-08-07 16:14:50 INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:19996
+2020-08-07 16:14:50 DEBUG    hit cache: b'www.google.com'
+2020-08-07 16:14:51 DEBUG    accept
+2020-08-07 16:14:51 DEBUG    server port 18388 connections = 7
+2020-08-07 16:14:51 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:20513
+2020-08-07 16:14:51 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:14:52 DEBUG    got local error
+2020-08-07 16:14:52 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:14:52 DEBUG    destroy: medium.com:443
+2020-08-07 16:14:52 DEBUG    destroying remote
+2020-08-07 16:14:52 DEBUG    destroying local
+2020-08-07 16:14:52 DEBUG    server port 18388 connections = 6
+2020-08-07 16:14:52 DEBUG    accept
+2020-08-07 16:14:52 DEBUG    server port 18388 connections = 7
+2020-08-07 16:14:52 INFO     TCP connecting cdn.optimizely.com:443 from ::ffff:111.40.35.2:21732
+2020-08-07 16:14:52 DEBUG    hit cache: b'cdn.optimizely.com'
+2020-08-07 16:14:52 DEBUG    accept
+2020-08-07 16:14:52 DEBUG    server port 18388 connections = 8
+2020-08-07 16:14:52 INFO     TCP connecting glyph.medium.com:443 from ::ffff:111.40.35.2:21733
+2020-08-07 16:14:52 DEBUG    hit cache: b'glyph.medium.com'
+2020-08-07 16:14:53 DEBUG    got local error
+2020-08-07 16:14:53 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:14:53 DEBUG    destroy: glyph.medium.com:443
+2020-08-07 16:14:53 DEBUG    destroying remote
+2020-08-07 16:14:53 DEBUG    destroying local
+2020-08-07 16:14:53 DEBUG    server port 18388 connections = 7
+2020-08-07 16:14:53 DEBUG    got local error
+2020-08-07 16:14:53 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:14:53 DEBUG    destroy: cdn.optimizely.com:443
+2020-08-07 16:14:53 DEBUG    destroying remote
+2020-08-07 16:14:53 DEBUG    destroying local
+2020-08-07 16:14:53 DEBUG    server port 18388 connections = 6
+2020-08-07 16:14:59 DEBUG    accept
+2020-08-07 16:14:59 DEBUG    server port 18388 connections = 7
+2020-08-07 16:14:59 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:27362
+2020-08-07 16:14:59 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:00 DEBUG    got local error
+2020-08-07 16:15:00 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:00 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:00 DEBUG    destroying remote
+2020-08-07 16:15:00 DEBUG    destroying local
+2020-08-07 16:15:00 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:00 DEBUG    accept
+2020-08-07 16:15:00 DEBUG    server port 18388 connections = 7
+2020-08-07 16:15:00 DEBUG    accept
+2020-08-07 16:15:00 DEBUG    server port 18388 connections = 8
+2020-08-07 16:15:00 INFO     TCP connecting glyph.medium.com:443 from ::ffff:111.40.35.2:28008
+2020-08-07 16:15:00 DEBUG    hit cache: b'glyph.medium.com'
+2020-08-07 16:15:00 INFO     TCP connecting cdn.optimizely.com:443 from ::ffff:111.40.35.2:28007
+2020-08-07 16:15:00 DEBUG    hit cache: b'cdn.optimizely.com'
+2020-08-07 16:15:00 DEBUG    got local error
+2020-08-07 16:15:00 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:00 DEBUG    destroy: glyph.medium.com:443
+2020-08-07 16:15:00 DEBUG    destroying remote
+2020-08-07 16:15:00 DEBUG    destroying local
+2020-08-07 16:15:00 DEBUG    server port 18388 connections = 7
+2020-08-07 16:15:00 DEBUG    got local error
+2020-08-07 16:15:00 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:00 DEBUG    destroy: cdn.optimizely.com:443
+2020-08-07 16:15:00 DEBUG    destroying remote
+2020-08-07 16:15:00 DEBUG    destroying local
+2020-08-07 16:15:00 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:02 DEBUG    accept
+2020-08-07 16:15:02 DEBUG    server port 18388 connections = 7
+2020-08-07 16:15:02 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:29792
+2020-08-07 16:15:02 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:03 DEBUG    got local error
+2020-08-07 16:15:03 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:03 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:03 DEBUG    destroying remote
+2020-08-07 16:15:03 DEBUG    destroying local
+2020-08-07 16:15:03 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:03 DEBUG    accept
+2020-08-07 16:15:03 DEBUG    server port 18388 connections = 7
+2020-08-07 16:15:03 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:30651
+2020-08-07 16:15:03 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:04 DEBUG    got local error
+2020-08-07 16:15:04 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:04 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:04 DEBUG    destroying remote
+2020-08-07 16:15:04 DEBUG    destroying local
+2020-08-07 16:15:04 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:05 DEBUG    destroy: clients4.google.com:443
+2020-08-07 16:15:05 DEBUG    destroying remote
+2020-08-07 16:15:05 DEBUG    destroying local
+2020-08-07 16:15:05 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:05 DEBUG    accept
+2020-08-07 16:15:05 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:05 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:31760
+2020-08-07 16:15:05 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:05 DEBUG    got local error
+2020-08-07 16:15:05 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:05 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:05 DEBUG    destroying remote
+2020-08-07 16:15:05 DEBUG    destroying local
+2020-08-07 16:15:05 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:05 DEBUG    accept
+2020-08-07 16:15:05 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:05 INFO     TCP connecting cdn.optimizely.com:443 from ::ffff:111.40.35.2:32305
+2020-08-07 16:15:05 DEBUG    hit cache: b'cdn.optimizely.com'
+2020-08-07 16:15:06 DEBUG    got local error
+2020-08-07 16:15:06 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:06 DEBUG    destroy: cdn.optimizely.com:443
+2020-08-07 16:15:06 DEBUG    destroying remote
+2020-08-07 16:15:06 DEBUG    destroying local
+2020-08-07 16:15:06 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:08 DEBUG    accept
+2020-08-07 16:15:08 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:08 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:33929
+2020-08-07 16:15:08 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:08 DEBUG    got local error
+2020-08-07 16:15:08 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:08 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:08 DEBUG    destroying remote
+2020-08-07 16:15:08 DEBUG    destroying local
+2020-08-07 16:15:08 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:09 DEBUG    accept
+2020-08-07 16:15:09 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:09 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:34579
+2020-08-07 16:15:09 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:10 DEBUG    got local error
+2020-08-07 16:15:10 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:10 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:10 DEBUG    destroying remote
+2020-08-07 16:15:10 DEBUG    destroying local
+2020-08-07 16:15:10 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:11 DEBUG    accept
+2020-08-07 16:15:11 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:11 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:36386
+2020-08-07 16:15:11 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:12 DEBUG    got local error
+2020-08-07 16:15:12 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:12 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:12 DEBUG    destroying remote
+2020-08-07 16:15:12 DEBUG    destroying local
+2020-08-07 16:15:12 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:12 DEBUG    accept
+2020-08-07 16:15:12 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:12 INFO     TCP connecting cdn.optimizely.com:443 from ::ffff:111.40.35.2:37597
+2020-08-07 16:15:12 DEBUG    hit cache: b'cdn.optimizely.com'
+2020-08-07 16:15:12 DEBUG    accept
+2020-08-07 16:15:12 DEBUG    server port 18388 connections = 7
+2020-08-07 16:15:12 INFO     TCP connecting glyph.medium.com:443 from ::ffff:111.40.35.2:37602
+2020-08-07 16:15:12 DEBUG    hit cache: b'glyph.medium.com'
+2020-08-07 16:15:13 DEBUG    got local error
+2020-08-07 16:15:13 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:13 DEBUG    destroy: glyph.medium.com:443
+2020-08-07 16:15:13 DEBUG    destroying remote
+2020-08-07 16:15:13 DEBUG    destroying local
+2020-08-07 16:15:13 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:13 DEBUG    got local error
+2020-08-07 16:15:13 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:13 DEBUG    destroy: cdn.optimizely.com:443
+2020-08-07 16:15:13 DEBUG    destroying remote
+2020-08-07 16:15:13 DEBUG    destroying local
+2020-08-07 16:15:13 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:13 DEBUG    accept
+2020-08-07 16:15:13 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:13 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:38173
+2020-08-07 16:15:13 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:14 DEBUG    got local error
+2020-08-07 16:15:14 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:14 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:14 DEBUG    destroying remote
+2020-08-07 16:15:14 DEBUG    destroying local
+2020-08-07 16:15:14 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:14 DEBUG    accept
+2020-08-07 16:15:14 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:14 INFO     TCP connecting cdn.optimizely.com:443 from ::ffff:111.40.35.2:38907
+2020-08-07 16:15:14 DEBUG    hit cache: b'cdn.optimizely.com'
+2020-08-07 16:15:14 DEBUG    accept
+2020-08-07 16:15:14 DEBUG    server port 18388 connections = 7
+2020-08-07 16:15:14 INFO     TCP connecting glyph.medium.com:443 from ::ffff:111.40.35.2:38908
+2020-08-07 16:15:14 DEBUG    hit cache: b'glyph.medium.com'
+2020-08-07 16:15:14 DEBUG    got local error
+2020-08-07 16:15:14 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:14 DEBUG    destroy: cdn.optimizely.com:443
+2020-08-07 16:15:14 DEBUG    destroying remote
+2020-08-07 16:15:14 DEBUG    destroying local
+2020-08-07 16:15:14 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:14 DEBUG    got local error
+2020-08-07 16:15:14 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:14 DEBUG    destroy: glyph.medium.com:443
+2020-08-07 16:15:14 DEBUG    destroying remote
+2020-08-07 16:15:14 DEBUG    destroying local
+2020-08-07 16:15:14 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:15 DEBUG    accept
+2020-08-07 16:15:15 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:15 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:39976
+2020-08-07 16:15:15 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:16 DEBUG    got local error
+2020-08-07 16:15:16 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:16 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:16 DEBUG    destroying remote
+2020-08-07 16:15:16 DEBUG    destroying local
+2020-08-07 16:15:16 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:16 DEBUG    accept
+2020-08-07 16:15:16 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:16 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:40856
+2020-08-07 16:15:16 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:17 DEBUG    got local error
+2020-08-07 16:15:17 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:17 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:17 DEBUG    destroying remote
+2020-08-07 16:15:17 DEBUG    destroying local
+2020-08-07 16:15:17 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:19 DEBUG    accept
+2020-08-07 16:15:19 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:19 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:42534
+2020-08-07 16:15:19 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:19 DEBUG    got local error
+2020-08-07 16:15:19 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:19 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:19 DEBUG    destroying remote
+2020-08-07 16:15:19 DEBUG    destroying local
+2020-08-07 16:15:19 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:25 DEBUG    accept
+2020-08-07 16:15:25 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:25 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:46883
+2020-08-07 16:15:25 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:25 DEBUG    got local error
+2020-08-07 16:15:25 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:25 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:25 DEBUG    destroying remote
+2020-08-07 16:15:25 DEBUG    destroying local
+2020-08-07 16:15:25 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:56 DEBUG    accept
+2020-08-07 16:15:56 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:56 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:21825
+2020-08-07 16:15:56 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:15:56 DEBUG    got local error
+2020-08-07 16:15:56 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:15:56 DEBUG    destroy: medium.com:443
+2020-08-07 16:15:56 DEBUG    destroying remote
+2020-08-07 16:15:56 DEBUG    destroying local
+2020-08-07 16:15:56 DEBUG    server port 18388 connections = 5
+2020-08-07 16:15:59 DEBUG    accept
+2020-08-07 16:15:59 DEBUG    server port 18388 connections = 6
+2020-08-07 16:15:59 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:24541
+2020-08-07 16:15:59 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:16:00 DEBUG    got local error
+2020-08-07 16:16:00 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:16:00 DEBUG    destroy: medium.com:443
+2020-08-07 16:16:00 DEBUG    destroying remote
+2020-08-07 16:16:00 DEBUG    destroying local
+2020-08-07 16:16:00 DEBUG    server port 18388 connections = 5
+2020-08-07 16:16:02 DEBUG    accept
+2020-08-07 16:16:02 DEBUG    server port 18388 connections = 6
+2020-08-07 16:16:02 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:26648
+2020-08-07 16:16:02 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:16:03 DEBUG    got local error
+2020-08-07 16:16:03 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:16:03 DEBUG    destroy: medium.com:443
+2020-08-07 16:16:03 DEBUG    destroying remote
+2020-08-07 16:16:03 DEBUG    destroying local
+2020-08-07 16:16:03 DEBUG    server port 18388 connections = 5
+2020-08-07 16:16:03 DEBUG    accept
+2020-08-07 16:16:03 DEBUG    server port 18388 connections = 6
+2020-08-07 16:16:03 INFO     TCP connecting cdn.optimizely.com:443 from ::ffff:111.40.35.2:27579
+2020-08-07 16:16:03 DEBUG    hit cache: b'cdn.optimizely.com'
+2020-08-07 16:16:03 DEBUG    got local error
+2020-08-07 16:16:03 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:16:03 DEBUG    destroy: cdn.optimizely.com:443
+2020-08-07 16:16:03 DEBUG    destroying remote
+2020-08-07 16:16:03 DEBUG    destroying local
+2020-08-07 16:16:03 DEBUG    server port 18388 connections = 5
+2020-08-07 16:16:06 DEBUG    accept
+2020-08-07 16:16:06 DEBUG    server port 18388 connections = 6
+2020-08-07 16:16:06 DEBUG    1 keys swept
+2020-08-07 16:16:06 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:30210
+2020-08-07 16:16:06 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:16:07 DEBUG    got local error
+2020-08-07 16:16:07 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:16:07 DEBUG    destroy: medium.com:443
+2020-08-07 16:16:07 DEBUG    destroying remote
+2020-08-07 16:16:07 DEBUG    destroying local
+2020-08-07 16:16:07 DEBUG    server port 18388 connections = 5
+2020-08-07 16:16:07 DEBUG    accept
+2020-08-07 16:16:07 DEBUG    server port 18388 connections = 6
+2020-08-07 16:16:07 INFO     TCP connecting medium.com:443 from ::ffff:111.40.35.2:30964
+2020-08-07 16:16:07 DEBUG    hit cache: b'medium.com'
+2020-08-07 16:16:08 DEBUG    got local error
+2020-08-07 16:16:08 ERROR    [Errno 104] Connection reset by peer
+2020-08-07 16:16:08 DEBUG    destroy: medium.com:443
+2020-08-07 16:16:08 DEBUG    destroying remote
+2020-08-07 16:16:08 DEBUG    destroying local
+2020-08-07 16:16:08 DEBUG    server port 18388 connections = 5
