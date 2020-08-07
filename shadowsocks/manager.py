@@ -200,8 +200,8 @@ def test():
     import struct
     from shadowsocks import encrypt
 
-    logging.basicConfig(level=5,
-                        format='%(asctime)s %(levelname)-8s %(message)s',
+    logging.basicConfig(level=logging.DEBUG,
+                        format='%(asctime)s - %(filename)s:%(lineno)d - %(levelname)-8s %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S')
     enc = []
     eventloop.TIMEOUT_PRECISION = 1
