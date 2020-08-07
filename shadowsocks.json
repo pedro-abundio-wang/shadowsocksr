@@ -6,6 +6,8 @@
     "password":"password",
     "timeout":500,
     "method":"aes-256-cfb",
+    "protocol":"origin",
+    "obfs":"plain",
     "fast_open": false
 }
 
