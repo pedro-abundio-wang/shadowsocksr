@@ -35,6 +35,9 @@ from shadowsocks import shell, daemon, eventloop, tcprelay, udprelay, \
 
 
 def main():
+
+    logging.basicConfig(format='%(asctime)s - %(filename)s:%(lineno)d - %(levelname)s:%(message)s')
+
     shell.check_python()
 
     config = shell.get_config(False)
