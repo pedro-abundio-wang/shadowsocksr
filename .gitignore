@@ -32,3 +32,6 @@ htmlcov
 
 #VSCode
 .vscode/
+
+#log
+**/*.log
