@@ -1616,3 +1616,125 @@ INFO: loading config from /root/shadowsocksr/shadowsocks/../shadowsocks/../confi
 2020-08-07 16:16:08 DEBUG    destroying remote
 2020-08-07 16:16:08 DEBUG    destroying local
 2020-08-07 16:16:08 DEBUG    server port 18388 connections = 5
+2020-08-07 16:45:46 INFO     loading libcrypto from /root/miniconda3/lib/libcrypto.so.1.1
+2020-08-07 16:45:46 INFO     server start with protocol[origin] password [b'password'] method [aes-256-cfb] obfs [plain] obfs_param []
+2020-08-07 16:45:46 INFO     starting server at :::18388
+2020-08-07 16:45:46 DEBUG    using event model: epoll
+2020-08-07 16:58:35 - shell.py:149 - INFO     loading config from /root/shadowsocksr/shadowsocks/../shadowsocks/../config.json
+2020-08-07 16:58:35 - util.py:85 - INFO     loading libcrypto from /root/miniconda3/lib/libcrypto.so.1.1
+2020-08-07 16:58:35 - server.py:89 - INFO     server start with protocol[origin] password [b'password'] method [aes-256-cfb] obfs [plain] obfs_param []
+2020-08-07 16:58:35 - server.py:117 - INFO     starting server at :::18388
+2020-08-07 16:58:35 - eventloop.py:163 - DEBUG    using event model: epoll
+2020-08-07 17:02:50 - shell.py:149 - INFO     loading config from /root/shadowsocksr/shadowsocks/../shadowsocks/../config.json
+2020-08-07 17:02:50 - util.py:85 - INFO     loading libcrypto from /root/miniconda3/lib/libcrypto.so.1.1
+2020-08-07 17:02:50 - server.py:89 - INFO     server start with protocol[origin] password [b'password'] method [aes-256-cfb] obfs [plain] obfs_param []
+2020-08-07 17:02:50 - server.py:117 - INFO     starting server at :::18388
+2020-08-07 17:02:50 - eventloop.py:163 - DEBUG    using event model: epoll
+2020-08-07 17:03:13 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:03:13 - tcprelay.py:844 - DEBUG    server port 18388 connections = 1
+2020-08-07 17:03:13 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:03:13 - tcprelay.py:844 - DEBUG    server port 18388 connections = 2
+2020-08-07 17:03:13 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:03:13 - tcprelay.py:844 - DEBUG    server port 18388 connections = 3
+2020-08-07 17:03:13 - tcprelay.py:422 - INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:18975
+2020-08-07 17:03:13 - asyncdns.py:428 - DEBUG    resolving b'www.google.com' with type 1 using server 8.8.8.8
+2020-08-07 17:03:13 - tcprelay.py:422 - INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:18974
+2020-08-07 17:03:13 - asyncdns.py:428 - DEBUG    resolving b'www.google.com' with type 1 using server 8.8.8.8
+2020-08-07 17:03:13 - tcprelay.py:422 - INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:18973
+2020-08-07 17:03:13 - asyncdns.py:428 - DEBUG    resolving b'www.google.com' with type 1 using server 8.8.8.8
+2020-08-07 17:03:13 - tcprelay.py:740 - DEBUG    destroy: www.google.com:443
+2020-08-07 17:03:13 - tcprelay.py:744 - DEBUG    destroying remote
+2020-08-07 17:03:13 - tcprelay.py:762 - DEBUG    destroying local
+2020-08-07 17:03:13 - tcprelay.py:844 - DEBUG    server port 18388 connections = 2
+2020-08-07 17:03:16 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:03:16 - tcprelay.py:844 - DEBUG    server port 18388 connections = 3
+2020-08-07 17:03:16 - tcprelay.py:422 - INFO     TCP connecting raw.githubusercontent.com:443 from ::ffff:111.40.35.2:21422
+2020-08-07 17:03:16 - asyncdns.py:428 - DEBUG    resolving b'raw.githubusercontent.com' with type 1 using server 8.8.8.8
+2020-08-07 17:03:23 - tcprelay.py:740 - DEBUG    destroy: www.google.com:443
+2020-08-07 17:03:23 - tcprelay.py:744 - DEBUG    destroying remote
+2020-08-07 17:03:23 - tcprelay.py:762 - DEBUG    destroying local
+2020-08-07 17:03:23 - tcprelay.py:844 - DEBUG    server port 18388 connections = 2
+2020-08-07 17:03:23 - tcprelay.py:740 - DEBUG    destroy: www.google.com:443
+2020-08-07 17:03:23 - tcprelay.py:744 - DEBUG    destroying remote
+2020-08-07 17:03:23 - tcprelay.py:762 - DEBUG    destroying local
+2020-08-07 17:03:23 - tcprelay.py:844 - DEBUG    server port 18388 connections = 1
+2020-08-07 17:03:27 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:03:27 - tcprelay.py:844 - DEBUG    server port 18388 connections = 2
+2020-08-07 17:03:27 - tcprelay.py:422 - INFO     TCP connecting ogs.google.com:443 from ::ffff:111.40.35.2:31557
+2020-08-07 17:03:27 - asyncdns.py:428 - DEBUG    resolving b'ogs.google.com' with type 1 using server 8.8.8.8
+2020-08-07 17:03:35 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:03:35 - tcprelay.py:844 - DEBUG    server port 18388 connections = 3
+2020-08-07 17:03:35 - tcprelay.py:422 - INFO     TCP connecting raw.githubusercontent.com:443 from ::ffff:111.40.35.2:38231
+2020-08-07 17:03:35 - asyncdns.py:443 - DEBUG    hit cache: b'raw.githubusercontent.com'
+2020-08-07 17:03:59 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:03:59 - tcprelay.py:844 - DEBUG    server port 18388 connections = 4
+2020-08-07 17:03:59 - tcprelay.py:422 - INFO     TCP connecting play.google.com:443 from ::ffff:111.40.35.2:56668
+2020-08-07 17:03:59 - asyncdns.py:428 - DEBUG    resolving b'play.google.com' with type 1 using server 8.8.8.8
+2020-08-07 17:04:00 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:00 - tcprelay.py:844 - DEBUG    server port 18388 connections = 5
+2020-08-07 17:04:00 - tcprelay.py:422 - INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:57517
+2020-08-07 17:04:00 - asyncdns.py:443 - DEBUG    hit cache: b'www.google.com'
+2020-08-07 17:04:21 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:21 - tcprelay.py:844 - DEBUG    server port 18388 connections = 6
+2020-08-07 17:04:21 - tcprelay.py:422 - INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:23465
+2020-08-07 17:04:21 - asyncdns.py:443 - DEBUG    hit cache: b'www.google.com'
+2020-08-07 17:04:24 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:24 - tcprelay.py:844 - DEBUG    server port 18388 connections = 7
+2020-08-07 17:04:24 - tcprelay.py:422 - INFO     TCP connecting github.githubassets.com:443 from ::ffff:111.40.35.2:26423
+2020-08-07 17:04:24 - asyncdns.py:428 - DEBUG    resolving b'github.githubassets.com' with type 1 using server 8.8.8.8
+2020-08-07 17:04:25 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:25 - tcprelay.py:844 - DEBUG    server port 18388 connections = 8
+2020-08-07 17:04:25 - tcprelay.py:422 - INFO     TCP connecting github.com:443 from ::ffff:111.40.35.2:26461
+2020-08-07 17:04:25 - asyncdns.py:428 - DEBUG    resolving b'github.com' with type 1 using server 8.8.8.8
+2020-08-07 17:04:25 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:25 - tcprelay.py:844 - DEBUG    server port 18388 connections = 9
+2020-08-07 17:04:25 - tcprelay.py:422 - INFO     TCP connecting github.com:443 from ::ffff:111.40.35.2:26462
+2020-08-07 17:04:25 - asyncdns.py:428 - DEBUG    resolving b'github.com' with type 1 using server 8.8.8.8
+2020-08-07 17:04:31 - tcprelay.py:740 - DEBUG    destroy: www.google.com:443
+2020-08-07 17:04:31 - tcprelay.py:744 - DEBUG    destroying remote
+2020-08-07 17:04:31 - tcprelay.py:762 - DEBUG    destroying local
+2020-08-07 17:04:31 - tcprelay.py:844 - DEBUG    server port 18388 connections = 8
+2020-08-07 17:04:31 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:31 - tcprelay.py:844 - DEBUG    server port 18388 connections = 9
+2020-08-07 17:04:31 - tcprelay.py:422 - INFO     TCP connecting play.google.com:443 from ::ffff:111.40.35.2:32067
+2020-08-07 17:04:31 - asyncdns.py:443 - DEBUG    hit cache: b'play.google.com'
+2020-08-07 17:04:33 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:33 - tcprelay.py:844 - DEBUG    server port 18388 connections = 10
+2020-08-07 17:04:33 - tcprelay.py:422 - INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:33904
+2020-08-07 17:04:33 - asyncdns.py:443 - DEBUG    hit cache: b'www.google.com'
+2020-08-07 17:04:36 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:36 - tcprelay.py:844 - DEBUG    server port 18388 connections = 11
+2020-08-07 17:04:36 - tcprelay.py:422 - INFO     TCP connecting ogs.google.com:443 from ::ffff:111.40.35.2:36394
+2020-08-07 17:04:36 - asyncdns.py:443 - DEBUG    hit cache: b'ogs.google.com'
+2020-08-07 17:04:36 - tcprelay.py:740 - DEBUG    destroy: github.githubassets.com:443
+2020-08-07 17:04:36 - tcprelay.py:744 - DEBUG    destroying remote
+2020-08-07 17:04:36 - tcprelay.py:762 - DEBUG    destroying local
+2020-08-07 17:04:36 - tcprelay.py:844 - DEBUG    server port 18388 connections = 10
+2020-08-07 17:04:37 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:37 - tcprelay.py:844 - DEBUG    server port 18388 connections = 11
+2020-08-07 17:04:37 - tcprelay.py:422 - INFO     TCP connecting apis.google.com:443 from ::ffff:111.40.35.2:37178
+2020-08-07 17:04:37 - asyncdns.py:428 - DEBUG    resolving b'apis.google.com' with type 1 using server 8.8.8.8
+2020-08-07 17:04:39 - tcprelay.py:740 - DEBUG    destroy: raw.githubusercontent.com:443
+2020-08-07 17:04:39 - tcprelay.py:744 - DEBUG    destroying remote
+2020-08-07 17:04:39 - tcprelay.py:762 - DEBUG    destroying local
+2020-08-07 17:04:39 - tcprelay.py:844 - DEBUG    server port 18388 connections = 10
+2020-08-07 17:04:43 - tcprelay.py:740 - DEBUG    destroy: www.google.com:443
+2020-08-07 17:04:43 - tcprelay.py:744 - DEBUG    destroying remote
+2020-08-07 17:04:43 - tcprelay.py:762 - DEBUG    destroying local
+2020-08-07 17:04:43 - tcprelay.py:844 - DEBUG    server port 18388 connections = 9
+2020-08-07 17:04:44 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:44 - tcprelay.py:844 - DEBUG    server port 18388 connections = 10
+2020-08-07 17:04:44 - tcprelay.py:422 - INFO     TCP connecting github.com:443 from ::ffff:111.40.35.2:43279
+2020-08-07 17:04:44 - asyncdns.py:443 - DEBUG    hit cache: b'github.com'
+2020-08-07 17:04:44 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:44 - tcprelay.py:844 - DEBUG    server port 18388 connections = 11
+2020-08-07 17:04:44 - tcprelay.py:422 - INFO     TCP connecting github.githubassets.com:443 from ::ffff:111.40.35.2:43283
+2020-08-07 17:04:44 - asyncdns.py:443 - DEBUG    hit cache: b'github.githubassets.com'
+2020-08-07 17:04:44 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:44 - tcprelay.py:844 - DEBUG    server port 18388 connections = 12
+2020-08-07 17:04:44 - tcprelay.py:422 - INFO     TCP connecting github.com:443 from ::ffff:111.40.35.2:43282
+2020-08-07 17:04:44 - asyncdns.py:443 - DEBUG    hit cache: b'github.com'
+2020-08-07 17:04:46 - tcprelay.py:908 - DEBUG    accept
+2020-08-07 17:04:46 - tcprelay.py:844 - DEBUG    server port 18388 connections = 13
+2020-08-07 17:04:46 - tcprelay.py:422 - INFO     TCP connecting www.google.com:443 from ::ffff:111.40.35.2:44500
+2020-08-07 17:04:46 - asyncdns.py:443 - DEBUG    hit cache: b'www.google.com'
