@@ -252,8 +252,8 @@ class TCPRelayHandler(object):
                             sock.sendto(data, (server_addr[0], dest_port))
 
             except Exception as e:
-                #trace = traceback.format_exc()
-                #logging.error(trace)
+                trace = traceback.format_exc()
+                logging.error(trace)
                 error_no = eventloop.errno_from_exception(e)
                 if error_no in (errno.EAGAIN, errno.EINPROGRESS,
                                 errno.EWOULDBLOCK):
@@ -280,16 +280,22 @@ class TCPRelayHandler(object):
                 else:
                     return
             except (OSError, IOError) as e:
+                trace = traceback.format_exc()
+                logging.error(trace)
                 error_no = eventloop.errno_from_exception(e)
                 if error_no in (errno.EAGAIN, errno.EINPROGRESS,
                                 errno.EWOULDBLOCK):
                     uncomplete = True
                 else:
-                    #traceback.print_exc()
+                    traceback.print_exc()
                     shell.print_exception(e)
+                    trace = traceback.format_exc()
+                    logging.error(trace)
                     self.destroy()
                     return False
             except Exception as e:
+                trace = traceback.format_exc()
+                logging.error(trace)
                 shell.print_exception(e)
                 self.destroy()
                 return False
@@ -364,6 +370,8 @@ class TCPRelayHandler(object):
                     self._data_to_write_to_remote = []
                 self._update_stream(STREAM_UP, WAIT_STATUS_READWRITING)
             except (OSError, IOError) as e:
+                trace = traceback.format_exc()
+                logging.error(trace)                
                 if eventloop.errno_from_exception(e) == errno.EINPROGRESS:
                     # in this case data is not sent at all
                     self._update_stream(STREAM_UP, WAIT_STATUS_READWRITING)
@@ -375,6 +383,8 @@ class TCPRelayHandler(object):
                     shell.print_exception(e)
                     if self._config['verbose']:
                         traceback.print_exc()
+                        trace = traceback.format_exc()
+                        logging.error(trace)
                     self.destroy()
 
     def _handle_stage_addr(self, ogn_data, data):
@@ -454,6 +464,8 @@ class TCPRelayHandler(object):
             self._log_error(e)
             if self._config['verbose']:
                 traceback.print_exc()
+                trace = traceback.format_exc()
+                logging.error(trace)
             self.destroy()
 
     def _create_remote_socket(self, ip, port):
@@ -551,6 +563,8 @@ class TCPRelayHandler(object):
                 except Exception as e:
                     shell.print_exception(e)
                     if self._config['verbose']:
+                        trace = traceback.format_exc()
+                        logging.error(trace)
                         traceback.print_exc()
         self.destroy()
 
@@ -568,6 +582,7 @@ class TCPRelayHandler(object):
                     (errno.ETIMEDOUT, errno.EAGAIN, errno.EWOULDBLOCK):
                 return
         if not data:
+            logging.debug('no data, call destory method')
             self.destroy()
             return
         ogn_data = data
@@ -584,6 +599,8 @@ class TCPRelayHandler(object):
                 try:
                     data = self._protocol.server_post_decrypt(data)
                 except Exception as e:
+                    trace = traceback.format_exc()
+                    logging.error(trace)
                     shell.print_exception(e)
                     self.destroy()
             if not data:
@@ -632,6 +649,7 @@ class TCPRelayHandler(object):
                     (errno.ETIMEDOUT, errno.EAGAIN, errno.EWOULDBLOCK, 10035): #errno.WSAEWOULDBLOCK
                 return
         if not data:
+            logging.debug('no data, call destory method')
             self.destroy()
             return
         self._server.server_transfer_dl += len(data)
@@ -653,6 +671,8 @@ class TCPRelayHandler(object):
             shell.print_exception(e)
             if self._config['verbose']:
                 traceback.print_exc()
+                trace = traceback.format_exc()
+                logging.error(trace)
             # TODO use logging when debug completed
             self.destroy()
 
