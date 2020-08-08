@@ -47,10 +47,11 @@ def check_python():
 
 def print_exception(e):
     global verbose
-    logging.error(e)
+    logging.error('print_exception:%s', e)
     if verbose > 0:
         import traceback
         traceback.print_exc()
+        logging.error('traceback:%s', traceback.format_exc())
 
 
 def print_shadowsocks():
